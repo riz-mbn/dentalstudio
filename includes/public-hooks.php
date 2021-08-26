@@ -24,7 +24,7 @@ function mbn_submenu_classes($classes, $args){
 
 add_action( 'wp_head', 'preload_fonts' ); 
 function preload_fonts() { 
-    $url = 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,600&display=swap'; 
+    $url = 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap'; 
     ?> 
 <link rel="dns-prefetch" href="https://fonts.gstatic.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"> 
