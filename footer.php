@@ -33,10 +33,10 @@
                         <div class="footer_menu">                
                             <ul class="menu vertical">
                                 <li class="menu-item"><a href="<?php echo home_url() ?>">About</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/#services">Services</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/#about">Testimonials</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/#faqs">Contact Us</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/contact">Blog</a></li>
+                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Services</a></li>
+                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Testimonials</a></li>
+                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Contact Us</a></li>
+                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Blog</a></li>
                             </ul>
                         </div>
                     </div>
