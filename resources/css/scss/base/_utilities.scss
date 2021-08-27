@@ -21,7 +21,29 @@
     font-weight: 700;
 }
 
+.icon_blurb {
 
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+	.icon_img {
+		margin-right: 10px;
+	}
+	.icon_txt {
+		.large {
+			font-size: 22px;
+		}
+	}
+
+}
+
+.subtext {
+	text-transform: capitalize;
+	font-size:11px;
+	font-style: italic;
+	font-weight: 500;
+}
 
 //Custom foundation 
 @include media(min-width, 1600px) {

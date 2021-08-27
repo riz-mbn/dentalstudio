@@ -14,9 +14,117 @@ body {
 
 /* Header Sticky Nav Style 7 */
 header {
+
 	position: relative;
 	z-index: 9999;
+
 	
+	&.home_header {
+
+		&.sticky-container {
+			position: absolute;
+		}
+
+		.hsnav-s7 {
+			background: transparent;
+			border: 0;
+			border-top: 6px solid $color-dark;
+
+			&.is-stuck {
+				position: fixed;
+				background: $color-black;
+				box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+
+				.grid-container {
+					max-width: 100%;
+					padding: 0 !important;
+					margin: 0 !important;
+					translate: all 0.3s ease;
+				}
+				
+				.navbar {
+
+					.navlogo {
+						display: block;
+					}
+
+					.navmenu {
+						float: none; 
+
+						a {
+							color: $color-white;
+						}
+					}		
+					.navutil {
+						a {
+							color: $color-secondary;
+						}
+						.subtext {
+							color: $color-secondary;
+						}
+						.icon_blurb {
+
+							.icon_txt{
+								color: $color-secondary;
+							}
+							
+							.icon_img {
+						
+								&.icn_phone {
+									background-image: url(../img/icon/icn-phone.svg);
+									width: 32px;
+									height: 32px;
+									background-size: cover;
+									
+									&.black {			
+										  filter: none;
+									}
+								}
+							}
+						}
+					}					
+				}
+			}		
+
+			.navbar {
+				.navlogo {
+					display: none;
+				}
+				.navmenu {
+					float:left;
+					a {
+						color: $color-secondary;
+						&:hover {
+							color: $color-primary;
+						}
+					}
+				}				
+				.navutil {
+
+					a {
+						color: $color-secondary;
+					}
+									
+					.icon_blurb {
+						.icon_img {
+					
+							&.icn_phone {
+								background-image: url(../img/icon/icn-phone.svg);
+								width: 32px;
+								height: 32px;
+								background-size: cover;
+								
+								&.black {			
+									  filter: brightness(0%);
+								}
+							}
+						}
+					}
+				}			
+			}
+		}
+	}
+		
 	&.overlap {
 		position: absolute;
 		left: 0;
@@ -25,6 +133,12 @@ header {
 
 		.hsnav-s7 {
 			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+
+			&.is-stuck {
+				position: fixed;
+				background: $color-black;
+				box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+			}
 		}
 	}
 	.hsnav-s7 {
@@ -32,6 +146,7 @@ header {
 		max-width: none !important;
 		border-top: 6px solid $color-dark;
 		border-bottom: 6px solid $color-dark;
+		translate: all 0.3s ease;
 		
 		&.sticky {
 			position: absolute;
@@ -39,16 +154,19 @@ header {
 			left: 0;
 			right: 0;
 			top: 0;
+			translate: all 0.3s ease;
 		}
 		&.is-stuck {
 			position: fixed;
 			background: $color-black;
 			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+			translate: all 0.3s ease;
 		}
 
 		.navbar {
 			position: relative;
 			min-height: 80px;
+			translate: all 0.3s ease;
 
 			.logo, .navlogo {
 				float: left;
@@ -57,16 +175,18 @@ header {
 				
 				height: 53px;
 				overflow: hidden;
+				translate: all 0.3s ease;
 			}
 
 			.navmenu {
 				padding: 15px 0;
+				translate: all 0.3s ease;
 
 				a {
-					font-size: 16px;
-					font-weight: bold;
+					font-size: 15px;
+					font-weight: 500;
 					text-transform: uppercase;
-					padding: 15px 45px;
+					padding: 15px 26px;
 					line-height: 1;
 					color: $color-white;
 
@@ -116,12 +236,13 @@ header {
 			.navutil {
 				float: right;
 				min-height: 80px;
-				padding: 20px 0 0;
+				display: flex;
+				align-items: center;
 
 				a {
 					display: inline-block;
 					padding: 5px 40px;
-					color: $color-white;
+					color: $color-dark;
 					font-size: 20px;
 					font-weight: bold;
 					line-height: 1;
@@ -272,19 +393,19 @@ header {
 						}
 					}
 
-    				.submenu-toggle {
-    					background:lighten($color-black, 90%)  url(../img/icn-plus.svg) no-repeat 17px center / 15px; 
-    					width:55px; 
-    					height: 47px; 
-    					right: 0;
+					.submenu-toggle {
+						background:lighten($color-black, 90%)  url(../img/icn-plus.svg) no-repeat 17px center / 15px; 
+						width:55px; 
+						height: 47px; 
+						right: 0;
 
-    					&[aria-expanded="true"] {
-    						background-image: url(../img/icn-close-r.svg); 
-    					}
-    					&:after {
-    						content: ""; border:0;
-    					}
-    				}
+						&[aria-expanded="true"] {
+							background-image: url(../img/icn-close-r.svg); 
+						}
+						&:after {
+							content: ""; border:0;
+						}
+					}
 					
 					@at-root header.show-menu .hsnav-s7 .mobmenu {
 						display: block;
@@ -294,6 +415,6 @@ header {
 				}
 			}
 		}
-
 	}
+	
 }
