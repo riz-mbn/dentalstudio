@@ -57,17 +57,14 @@ header {
 					}		
 					.navutil {
 						a {
-							color: $color-secondary;
+							color: $color-primary;
 						}
+
 						.subtext {
-							color: $color-secondary;
+							color: $color-primary;
 						}
 						.icon_blurb {
 
-							.icon_txt{
-								color: $color-secondary;
-							}
-							
 							.icon_img {
 						
 								&.icn_phone {
@@ -181,6 +178,15 @@ header {
 			.navmenu {
 				padding: 15px 0;
 				translate: all 0.3s ease;
+
+				li.page_item {
+					
+					a {
+						&:first-child {
+							padding-left: 0;
+						}
+					}
+				}
 
 				a {
 					font-size: 15px;

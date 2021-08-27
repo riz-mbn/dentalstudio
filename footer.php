@@ -12,7 +12,7 @@
                                 <img src="<?php echo MBN_ASSETS_URI ?>/img/logo-med.svg" alt="" width="386" height="104" />
                             </figure>
                         </div>
-                        <a href="<?php echo home_url() ?>/contact" class="button primary large">Schedule An Appointment</a>
+                        <a href="<?php echo home_url() ?>/contact-us" class="button primary large">Schedule An Appointment</a>
                     </div>
                     <div class="cell large-4 large-offset-1 foot_about">
                         <h3 class="col-title">Contact Details</h3>

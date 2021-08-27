@@ -16,17 +16,15 @@ input[type="password"],
 input[type="tel"],
 textarea,
 select {
-    color: lighten($color-black, 7%);
-    border:0;
-    border: 1px solid darken($color-white, 12%);
+    color: $color-grey;
+    border: 2px solid $color-dark;
     height: $field-height;
     padding:15px 20px;
     font-size:16px;
     font-family: $body-font-family;
-    margin: 0 0 15px;
-    -webkit-border-radius:0;
-    -moz-border-radius:0;
-    border-radius:0;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 7px;
 
     &:focus {
         border: 1px solid $color-primary;
@@ -335,4 +333,97 @@ ul.gform_fields  {
             }
         }
     }
+}
+
+
+.gform_wrapper {
+    
+    .gform_fields {
+        width: 100%;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(auto-fill,auto);
+        grid-column-gap: 2%;
+        grid-row-gap: 16px;
+
+        .gfield {
+            grid-column: 1/-1;
+            &.gfield--width-half{
+                grid-column: span 6;
+            }
+
+        }
+    }
+    
+    .gform_footer, 
+    .gform_page_footer {
+        margin: 6px 0 0;
+        padding: 16px 0;
+    }
+
+    .hidden_label .gfield_label, 
+    .hidden_sub_label, 
+    .screen-reader-text {
+        border: 0;
+        clip: rect(1px,1px,1px,1px);
+        clip-path: inset(50%);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        word-wrap: normal!important;
+    }
+
+    .ginput_complex {
+        display: flex;
+        flex-flow: row wrap;
+
+        label,
+        legend {
+            display: none;
+        }
+
+        span {
+            flex: 1;
+            padding-right: 1%;
+        }
+        
+
+        @include media (min-width, 641px){
+
+            &:not(.ginput_container_address) {
+                fieldset,
+                span {
+                    &:not([style*="display:none"]) {
+                        &:not(.ginput_full) {
+                            padding-right: 1%;
+                        }
+
+                        &:not(.ginput_full)~span:not(.ginput_full) {
+                            padding-right: 0;
+                            padding-left: 1%;
+                        }
+
+                    }
+                }
+            }
+
+            &:not(.ginput_container_address) {
+                fieldset,
+                span {
+                    &:not([style*="display:none"]) {
+                        &:not(.ginput_full) {
+                            padding-right: 1%;
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
 }

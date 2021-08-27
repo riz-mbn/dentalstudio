@@ -2,6 +2,82 @@
 
     .content {
         padding-top: 0;
+
+        .sec_request {
+            background: $color-white;
+            padding: 135px 119px;
+
+            .section_title {
+                &:after {                    
+                    right: 40px;
+                    content: url(../img/icon/icn-title.svg);
+                }
+            }
+
+            .col-image {
+                position: relative;
+
+                figure {
+                    position: absolute;
+                    left: -136px;
+                    width: 712px;
+                    z-index: 1;
+                    top: -46px;
+                }
+            }
+            
+            .col-copy {
+                
+                z-index: 2;
+                .text_wrap {
+                    margin-bottom: 65px;
+                }
+            }
+        }
+
+        .sec_google_review {
+            position: relative;
+
+            .grid-container {
+                max-width: 1590px;
+                padding: 0;
+            }
+
+            .section_title {
+                display: flex;
+                flex-direction: row;
+
+                h4 {
+                    color: $color-secondary;
+                }
+
+            }
+
+            .text_wrap {
+                margin-bottom: 40px;
+            }
+
+            figure {
+                margin-right: 29px;
+                &.bg{
+                    z-index: -1;
+                }
+            }
+
+            .col-copy {
+                background: #f4e4d4;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 89px;
+                min-height: 952px;
+            }
+        }
+        
+        .sec_testimonials {
+            padding: 140px 0 190px;
+        }
     }
 
 }
