@@ -1,3 +1,9 @@
+.grid-container {
+    @include media (min-width, 1024px){
+        padding: 0;
+    }
+}
+
 .content {
     padding-top: 60px;
 
@@ -5,9 +11,27 @@
         color: $color-primary;
         position: relative;
 
-        &:after {
+        h2 {
+            letter-spacing: -2.41px;
+            line-height: 1.2;
+        }
+
+        .after_title {
             position: absolute;
-            bottom: -40px;
+            bottom: -17px;
+
+            &.end {                                
+                right: 100px;
+            }
+
+            &.middle {        
+                bottom: -5px;
+                left: 37%;
+            }
+
+            &.start {
+
+            }
         }
     }
 
@@ -29,6 +53,70 @@ figure {
         }
     }
     
+}
+
+
+.testimonials {
+    
+    .testimonial_item {
+        padding: 0 15px;
+    
+        &.even {
+            .item_wrap {
+                background: #fcefe0;
+            }
+
+        }
+
+        &.odd {
+            .item_wrap {
+                background: #f8f8f8;
+
+                &:before {
+                    filter: grayscale(1) opacity(0.5);
+                }
+            }
+        }
+
+        .item_wrap {
+
+            border-radius: 40px;
+            padding: 0 36px;
+            display: flex;
+            min-height:433px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            
+            &:before {
+                content: '';
+                background-image: url(../img/icon/icn-quote.svg);
+                width: 28px;
+                height: 25px;
+                background-size: cover;
+                margin: 0 auto 30px;
+            }
+    
+            .client_review {
+                p {
+                    font-size: 17px;
+                    line-height: 25px;
+                    text-align: justify;
+                }
+            }
+
+            .client_name {
+                font-size: 17px;
+                color: $color-secondary;
+                font-weight: 800;
+            }
+            .client_year {
+                font-size: 15px;
+                color: $color-secondary;
+            }
+        }
+    }
+
 }
 
 /* HERO STYLE 3 */

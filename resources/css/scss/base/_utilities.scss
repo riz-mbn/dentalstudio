@@ -119,6 +119,14 @@
     height: 15px;
 }
 
+.field_type-star_rating_field {
+	ul.star-rating {
+		li i {
+			color: #fbbb00;
+		}
+	}
+}
+
 
 //Sticky Fixer for smooth scroll content
 .sticky-fixer {
@@ -129,9 +137,6 @@
 // Slick Custom button
 .slick-slider {
 	position: relative;
-	padding-left: 50px;
-	padding-right: 50px;
-
 	.slick-arrow {
 		width: 30px;
 		height: 30px;
@@ -152,12 +157,12 @@
 		}
 	}
 	.slick-prev {
-		left:10px;
-		background: url(../img/icn-chev-left.svg) no-repeat center;
+		left: -80px;
+		background: url(../img/icon/icn-chev-left.svg) no-repeat center;
 	}
 	.slick-next {
-		right: 10px;
-		background: url(../img/icn-chev-right.svg) no-repeat center;
+		right: -80px;
+		background: url(../img//icon/icn-chev-right.svg) no-repeat center;
 	}
 }
 

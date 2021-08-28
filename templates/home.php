@@ -35,7 +35,10 @@
                 </div>
                 <div class="cell large-8 col-copy">
                     <div class="text_wrap">
-                        <h2 class="section_title">Request An Appointment</h2>
+                        <div class="section_title">
+                            <h2 class="">Request An Appointment</h2>
+                            <figure class="after_title end"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title.svg" alt="" width="448" height="42" /></figure>
+                        </div>
                         <p class="smal">To request a consultation or service, please fill out the form below and our scheduling team will call you to book your appointment. Alternatively, you can call the number below during office hours to speak to them directly.</p>
                         <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="4803725079">(480) 372-5079</a></h4>
                     </div>
@@ -69,25 +72,41 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-7 col-copy">
-                    <h2 class="section_title small">What our patients say…</h2>
-                    <h4>Results matter, and we pride ourselves on the work we do. Read some of our patient reviews taken directly from Google.</h4>
+                    <div class="section_title">
+                        <h2 class="">What our patients say…</h2>
+                        <figure class="after_title middle"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title.svg" alt="" width="298" height="36" /></figure>
+                    </div>
+                    <h4>Results matter, and we pride ourselves on the work we do.</h4><h4>Read some of our patient reviews taken directly from Google.</h4>
                 </div>
                 <div class="cell large-5 col-image">
                 </div>
                 <div class="cell large-12 col-copy">
+                    <?= do_shortcode('[mbn_testimonials]')  ?>
                 </div>
             </div>
         </div>
     </section>
     <section class="sec_why">
         <div class="grid-container">
-            <div class="grid-x grid-margin-x">
-                <div class="cell large-7 col-copy">
-                    <div class="section_title small">
-                        <h2>Why Dental Studio 101?</h2>
-                    </div>
-                </div>
+            <div class="section_title end ">
+                <h2 class=" text-center">Why Dental Studio 101?</h2>
+                <figure class="after_title end"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title.svg" alt="" width="538" height="49" /></figure>
+            </div>
+            <div class="grid-x grid-margin-x row-top">
                 <div class="cell large-5 col-image">
+                    <figure class="after_title end"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental.jpg" alt="" width="515" height="548" /></figure>
+                </div>
+                <div class="cell large-7 col-copy">
+                    <p>We are committed to providing premier customer service and industry-leading cosmetic dentistry to all of our patients. To achieve this, Dr Peterson Boyle and the team at Dental Studio 101 use advanced, cutting-edge technology, and a close relationship with our in-house esthetic laboratory so that our cosmetic outcomes are in line with what our patients desire.</p>
+                    <p>In our state-of-the-art North Scottsdale cosmetic dentist facility, we use environmentally-friendly digital x-rays, highly advanced digital cameras that allow you to see procedures from the dentists’ point of view. We stay up to date in not only equipment but also continuing education for our entire team to bring our patients the latest in minimally invasive technologies.</p>
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x row-bottom">
+                <div class="cell large-5 col-copy">
+                    <p>It is this level of expertise in both technology and dentistry that has led to Dental Studio 101 gaining the reputation as the best cosmetic dentist in Scottsdale and for Dr Peterson Boyle as the “go-to dentist” for cosmetic dental procedures across the Valley.</p>
+                </div>
+                <div class="cell large-7 col-image">
+                    <figure class="after_title end"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental_2.jpg" alt="" width="810" height="474" /></figure>
                 </div>
             </div>
         </div>
@@ -95,9 +114,10 @@
     <section class="sec_what">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-7 col-copy">
-                    <div class="section_title small">
-                        <h2>Why Dental Studio 101?</h2>
+            <div class="cell large-7 col-copy">
+                    <div class="section_title ">
+                        <h2 class="">What Cosmetic Dentistry<br/>Services Do We Offer?</h2>
+                        <figure class="after_title start"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title.svg" alt="" width="282" height="54" /></figure>
                     </div>
                 </div>
                 <div class="cell large-5 col-image">
@@ -114,6 +134,11 @@
                     </div>
                 </div>
                 <div class="cell large-5 col-image">
+                </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+                <div class="cell large-12 col-copy">
+                    <?= do_shortcode('[mbn_services_tab]')  ?>
                 </div>
             </div>
         </div>

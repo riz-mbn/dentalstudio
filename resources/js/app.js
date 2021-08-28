@@ -34,6 +34,13 @@
                 }
             });
 
+            $('.testimonials').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            });
+
         },
 
         customDropdown: function() {

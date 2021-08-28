@@ -4,15 +4,10 @@
         padding-top: 0;
 
         .sec_request {
+
+            min-height: 1113px;
             background: $color-white;
             padding: 135px 119px;
-
-            .section_title {
-                &:after {                    
-                    right: 40px;
-                    content: url(../img/icon/icn-title.svg);
-                }
-            }
 
             .col-image {
                 position: relative;
@@ -39,7 +34,7 @@
             position: relative;
 
             .grid-container {
-                max-width: 1590px;
+                max-width: 1560px;
                 padding: 0;
             }
 
@@ -47,8 +42,13 @@
                 display: flex;
                 flex-direction: row;
 
+                figure { 
+                    width: 80%;
+                }
+
                 h4 {
                     color: $color-secondary;
+                    line-height: 1.8;
                 }
 
             }
@@ -58,7 +58,6 @@
             }
 
             figure {
-                margin-right: 29px;
                 &.bg{
                     z-index: -1;
                 }
@@ -70,13 +69,94 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 0 89px;
+                padding: 0 72px 0 89px;
                 min-height: 952px;
             }
         }
         
         .sec_testimonials {
             padding: 140px 0 190px;
+
+            h4 {
+                font-size: 25px;
+                font-weight: 400;
+                color: $color-grey;
+                margin-bottom: 0;
+            }
+
+            .col-copy {
+                margin-bottom: 65px;
+            }
+        }
+
+        
+        .sec_why {
+            padding-top: 110px;
+            position: relative;
+            min-height: 1185px;
+            
+            &:before {
+                content: '';
+                background: #f4e4d4;
+                height: 765px;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+            }            
+            
+            .section_title {
+                margin-bottom: 65px;
+
+                .after_title {
+                 bottom: -25px;
+                 right: 26%;
+                 left: auto;
+                }
+            }
+
+            .row-top {                
+                align-items: flex-start;
+
+                .col-image {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        background: url(../img/bgs/img_why_dental_bg.jpg);
+                        width: 482px;
+                        height: 632px; 
+                        position: absolute;
+                        left: -250px;
+                        top: -40px;
+                        z-index: -1;
+                    }
+                }
+            }
+            .row-bottom {                
+                align-items: flex-end;
+                margin-top: -180px;
+
+                .col-copy{  
+                    margin-bottom: 65px;
+                }
+
+                .col-image {
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        background: url(../img/bgs/img_why_dental_2_bg.jpg);
+                        width: 482px;
+                        height: 632px; 
+                        position: absolute;
+                        right: -250px;
+                        top: -111px;
+                        z-index: -1;
+                    }
+                }
+
+            }
         }
     }
 
