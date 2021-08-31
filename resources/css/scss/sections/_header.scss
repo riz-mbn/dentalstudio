@@ -34,15 +34,15 @@ header {
 				position: fixed;
 				background: $color-black;
 				box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
-
-				.grid-container {
-					max-width: 100%;
-					padding: 0 !important;
-					margin: 0 !important;
-					translate: all 0.3s ease;
-				}
 				
 				.navbar {
+
+					.grid-container {
+						max-width: 100%;
+						padding: 0 !important;
+						margin: 0 !important;
+						transition: all 0.3s ease;
+					}
 
 					.navlogo {
 						display: block;
@@ -68,10 +68,6 @@ header {
 							.icon_img {
 						
 								&.icn_phone {
-									background-image: url(../img/icon/icn-phone.svg);
-									width: 32px;
-									height: 32px;
-									background-size: cover;
 									
 									&.black {			
 										  filter: none;
@@ -143,7 +139,7 @@ header {
 		max-width: none !important;
 		border-top: 6px solid $color-dark;
 		border-bottom: 6px solid $color-dark;
-		translate: all 0.3s ease;
+		transition: all 0.3s ease;
 		
 		&.sticky {
 			position: absolute;
@@ -151,33 +147,44 @@ header {
 			left: 0;
 			right: 0;
 			top: 0;
-			translate: all 0.3s ease;
+			transition: all 0.3s ease;
 		}
 		&.is-stuck {
 			position: fixed;
 			background: $color-black;
 			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
-			translate: all 0.3s ease;
+			transition: all 0.3s ease;
+
+			.navbar {
+
+				.navwrap{
+					justify-content: space-between;
+				}
+			}
 		}
 
 		.navbar {
 			position: relative;
 			min-height: 80px;
-			translate: all 0.3s ease;
+			transition: all 0.3s ease;
+			.navwrap{
+					
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
 
-			.logo, .navlogo {
-				float: left;
-				margin-left: 40px;
-				margin-top: 14px;
-				
+			.logo, .navlogo {				
 				height: 53px;
 				overflow: hidden;
-				translate: all 0.3s ease;
+				transition: all 0.3s ease;
+				padding-left: 40px;
+				display: flex;
+				align-items: center;
 			}
 
 			.navmenu {
-				padding: 15px 0;
-				translate: all 0.3s ease;
+				transition: all 0.3s ease;
 
 				li.page_item {
 					
@@ -192,7 +199,6 @@ header {
 					font-size: 15px;
 					font-weight: 500;
 					text-transform: uppercase;
-					padding: 15px 26px;
 					line-height: 1;
 					color: $color-white;
 
@@ -247,7 +253,7 @@ header {
 
 				a {
 					display: inline-block;
-					padding: 5px 40px;
+					padding: 0px 40px;
 					color: $color-dark;
 					font-size: 20px;
 					font-weight: bold;
@@ -322,23 +328,60 @@ header {
 
 			}
 
+			@include media(max-width, 1440px){
+				.logo, .navlogo {
+					padding-left: 0; 
+				}
+			}
+
 			@include media(max-width, 1366px) {
+	
+				.navwrap{
+					justify-content: space-between !important;
+				}
 				
 				.logo, .navlogo {
-					margin-left: 30px;
+					margin-left: 10px;
+
+					figure {
+						width: 150px;
+					}
 				}
 
 				.navmenu {
 					a {
-						padding-left: 30px;
-						padding-right: 30px;
+						padding-left: 10px !important;
+						padding-right: 10px;
 					}
 				}
 
+				.navutil {
+					a {
+						
+    					padding: 5px 10px;
+					}
+				}
+			}
 
+			@include media (max-width, 1200px) {
+				
+				.navmenu {
+					a {
+						font-size: 12px;
+					}
+				}
 			}
 
 			@include media(max-width, 1023px) {
+
+				.grid-container {
+					padding: 0 !important;
+					margin: 0 !important;
+				}
+				
+				.logo, .navlogo {
+					display: flex !important;
+				}
 
 				.navutil {
 					margin-right: 90px;
@@ -418,6 +461,28 @@ header {
 						top:80px;
 					}
 
+				}
+			}
+		}
+
+		@include media (max-width, 1023px){
+			
+			position: fixed;
+			background: $color-black !important;
+			box-shadow: 0 3px 6px 0 rgba($color-black, 0.16);
+			transition: all 0.3s ease;
+			.navbar {
+				.navutil {
+					a {
+						color: #e5cfb4 !important;
+					}
+					.icon_blurb {
+						.icon_img {
+							&.icn_phone {
+								filter: brightness(1) !important;
+							}
+						}
+					}
 				}
 			}
 		}

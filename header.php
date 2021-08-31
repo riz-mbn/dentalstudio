@@ -18,73 +18,12 @@
         <header id="header" class="page_header" data-sticky-container data-toggler=".show-menu">
             <div class="hsnav-s7 sticky" data-sticky data-options="marginTop:0">
                 <div class="navbar">
-                    <a class="navlogo" href="#">
-                        <figure>
-                            <img src="<?php echo MBN_ASSETS_URI ?>/img/logo-white-small.svg" alt="" width="196" height="53">
-                        </figure>
-                    </a>
-                    <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
-
-                    <div class="navutil">
-                        <a href="tel:4804884852">
-                            <div class="icon_blurb">						
-                                <div class="icon_img icn_phone"></div>
-                                <div class="icon_txt">(480) 488-4852</div>
-                            </div>
-                            <div class="subtext">"Dedication to Quality and Consistency.."</div>
-                        </a>
-                    </div>
-
-                    <nav class="navmenu show-for-large">
-                        <?php
-                            wp_nav_menu( array( 
-                                'theme_location' => 'main-menu',
-                                'menu'         => '',
-                                'container'    => 'ul',
-                                'items_wrap' => '<ul class="menu align-center dropdown" data-dropdown-menu>%3$s</ul>' ,
-                                'menu_class'   => 'menu align-center dropdown',
-                            ));
-                        ?> 
-                    </nav>
-                    <nav class="mobmenu hide-for-large">
-                        <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
-                            <li class="current-menu-item"><a href="#">Home</a></li>
-                            <li><a href="#">Services</a>
-                                <ul>
-                                    <li><a href="#">Services 1</a></li>
-                                    <li><a href="#">Services 2</a></li>
-                                    <li><a href="#">Services 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">News & Events</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>            
-        </header>
-    
-    <?php elseif( is_front_page() ): ?>
-        <header id="header" class="home_header" data-sticky-container data-toggler=".show-menu">
-            <div class="hsnav-s7 sticky" data-sticky data-options="marginTop:0">
-                <div class="navbar">
-                    <div class="grid-container">
+                    <div class="navwrap">
                         <a class="navlogo" href="#">
                             <figure>
                                 <img src="<?php echo MBN_ASSETS_URI ?>/img/logo-white-small.svg" alt="" width="196" height="53">
                             </figure>
                         </a>
-                        <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
-                        <div class="navutil">
-                            <a href="#">
-                                <div class="icon_blurb">				
-                                    <div class="icon_img icn_phone black"></div>		
-                                    <div class="icon_txt">(480) 488-4852</div>
-                                </div>
-                                <div class="subtext">"Dedication to Quality and Consistency.."</div>
-                            </a>
-                        </div>
                         <nav class="navmenu show-for-large">
                             <?php
                                 wp_nav_menu( array( 
@@ -96,6 +35,16 @@
                                 ));
                             ?> 
                         </nav>
+                        <div class="navutil">
+                            <a href="tel:4804884852">
+                                <div class="icon_blurb">						
+                                    <div class="icon_img icn_phone"></div>
+                                    <div class="icon_txt">(480) 488-4852</div>
+                                </div>
+                                <div class="subtext">"Dedication to Quality and Consistency.."</div>
+                            </a>
+                        </div>
+                        <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
                         <nav class="mobmenu hide-for-large">
                             <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
                                 <li class="current-menu-item"><a href="#">Home</a></li>
@@ -111,6 +60,59 @@
                                 <li><a href="#">Contact Us</a></li>
                             </ul>
                         </nav>
+                    </div>
+                </div>
+            </div>            
+        </header>
+    
+    <?php elseif( is_front_page() ): ?>
+        <header id="header" class="home_header" data-sticky-container data-toggler=".show-menu">
+            <div class="hsnav-s7 sticky" data-sticky data-options="marginTop:0">
+                <div class="navbar">
+                    <div class="grid-container">
+                        <div class="navwrap">
+                            <a class="navlogo" href="#">
+                                <figure>
+                                    <img src="<?php echo MBN_ASSETS_URI ?>/img/logo-white-small.svg" alt="" width="196" height="53">
+                                </figure>
+                            </a>
+                            <nav class="navmenu show-for-large">
+                                <?php
+                                    wp_nav_menu( array( 
+                                        'theme_location' => 'main-menu',
+                                        'menu'         => '',
+                                        'container'    => 'ul',
+                                        'items_wrap' => '<ul class="menu align-center dropdown" data-dropdown-menu>%3$s</ul>' ,
+                                        'menu_class'   => 'menu align-center dropdown',
+                                    ));
+                                ?> 
+                            </nav>
+                            <div class="navutil">
+                                <a href="#">
+                                    <div class="icon_blurb">				
+                                        <div class="icon_img icn_phone black"></div>		
+                                        <div class="icon_txt">(480) 488-4852</div>
+                                    </div>
+                                    <div class="subtext">"Dedication to Quality and Consistency.."</div>
+                                </a>
+                            </div>
+                            <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
+                            <nav class="mobmenu hide-for-large">
+                                <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
+                                    <li class="current-menu-item"><a href="#">Home</a></li>
+                                    <li><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="#">Services 1</a></li>
+                                            <li><a href="#">Services 2</a></li>
+                                            <li><a href="#">Services 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">News & Events</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>            

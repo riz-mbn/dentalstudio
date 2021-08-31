@@ -1,5 +1,5 @@
 .grid-container {
-    @include media (min-width, 1024px){
+    @include media (min-width, 1440px){
         padding: 0;
     }
 }
@@ -12,8 +12,15 @@
         position: relative;
 
         h2 {
+            position: relative;
             letter-spacing: -2.41px;
             line-height: 1.2;
+            &:after {
+                content: url('../img/icon/icn-title.svg');
+                position: absolute;
+                bottom: -17px;
+                right: 140px;
+            }
         }
 
         .after_title {
@@ -109,6 +116,7 @@ figure {
                 font-size: 17px;
                 color: $color-secondary;
                 font-weight: 800;
+                text-transform: uppercase;
             }
             .client_year {
                 font-size: 15px;
@@ -118,11 +126,134 @@ figure {
     }
 
 }
+.col-content {
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    
+    .services-content {
+        border: 0;
+
+        .tabs-panel {
+            .content{
+                display: flex;
+                align-items: center;
+                .col-image {
+                    width: 100%;
+                    margin-right: 60px;
+                    figure {
+                        width: 347px;
+                    }
+                }
+
+                .col-copy{
+                    padding-top: 70px;
+                    color: $body-color !important;
+
+                    .button {
+                       a {
+                        font-size: 20px;
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.col-tabs {
+    .services-tabs {
+        border: 0;
+        border-right: 2px solid #eedfcd !important;
+        .tabs-title {
+            margin-bottom: 15px;
+            translate: all 0.3s ease;
+
+            &.is-active,
+            &:hover {
+                a {
+                    .icon {
+                        background: $color-dark;
+                        figure {
+
+                            img {
+                                filter: brightness(0) invert(1);
+                            }
+                        }
+
+                    }
+
+                    .title {
+                        color: $color-dark;
+                    }
+                }
+            }
+
+            a {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                background: transparent;
+                translate: all 0.3s ease;
+    
+                span {
+                    &.icon {
+                        margin-right: 28px;
+                        background: transparent;
+                        border-radius: 50px;
+                        padding: 13px 10px;
+                        translate: all 0.5s ease;
+                    }
+    
+                    &.title {
+                        color: #d0d0d0;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 1.4;
+                        translate: all 0.5s ease;
+                    }
+                }
+            }
+        }
+        .col-content {
+
+            .tabs-panel {
+                .col-copy {
+                    padding-top: 0;
+                    margin-bottom: 0;
+
+                    h3 {
+                        color: $color-secondary;
+                        font-size: 35px;
+                    }
+                    p{
+                        font-size: 25px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
 
 /* HERO STYLE 3 */
 .hero-s3 {
     min-height: 100vh;
     position: relative;
+
+    .bg {
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            background-image: linear-gradient( -90deg  , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.58) 40%, #fff);
+        }
+    }
 
     .hero-caption {
         padding: 150px 0 50px;
@@ -163,6 +294,18 @@ figure {
                 display: inline-block;
                 padding: 10px 60px;
                 max-width: calc(20% - 4px);
+            }
+        }
+    }
+    @include media(max-width,1366px) {
+        
+        figure {
+            
+            &.bg {
+                img {
+                    object-position: 77%;
+            
+                }
             }
         }
     }
@@ -218,4 +361,9 @@ figure {
             }
         }
     }
+}
+
+
+@include media (max-width,1024px){
+
 }
