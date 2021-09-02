@@ -37,7 +37,7 @@ function mbn_testimonials() {
                     endif;
                     if( !empty(get_the_content())):
                     ?>
-                <div class="cell xlarge-4 large-4 medium-6 small-12 testimonial_item <?php echo $class; ?>">
+                <div class="testimonial_item <?php echo $class; ?>">
                     <div class="item_wrap">
                         <div class="text_wrap client_review">
                             <p class=""><?php echo get_the_content(); ?></p>
@@ -76,8 +76,8 @@ function mbn_services_tab() {
 
     <div class="grid-container">
         <div class="grid-x">
-            <div class="cell xlarge-4 large-5 col-tabs">
-                <ul class="services-tabs vertical tabs" data-tabs id="services-tabs" >
+            <div class="cell xlarge-4 large-4 medium-12 col-tabs">
+                <div class="services-tabs tabs" data-tabs id="services-tabs" >
                     <?php
                     
                     $cnt = 0;
@@ -89,16 +89,16 @@ function mbn_services_tab() {
                         $cnt++; 
                         $active = ($cnt == 1) ? 'is-active' : '';
                     ?>
-                        <li class="tabs-title <?php echo $active ?>" class=""><a href="#<?php echo $service->post_name; ?>" aria-selected="true">
+                        <div class="tabs-title <?php echo $active ?>" class=""><a href="#<?php echo $service->post_name; ?>" aria-selected="true">
                             <?php if($icon): ?><span class="icon"><figure><img src="<?php echo esc_url($icon); ?>" alt="" width="40" height=""/></figure></span><?php endif; ?>
                             <span class="title"><?php echo $service->post_title; ?></span>
-                        </a></li>
+                        </a></div>
                     <?php
                     endforeach;
                     wp_reset_postdata(); ?>
-                </ul>
+                </div>
             </div>
-            <div class="cell xlarge-8 large-7 col-content">
+            <div class="cell xlarge-8 large-8 medium-12 col-content">
                 <div class="services-content tabs-content vertical" data-tabs-content="services-tabs">
                 <?php 
                 
@@ -108,7 +108,7 @@ function mbn_services_tab() {
                      $active = ($cnt == 1) ? 'is-active' : '';
                      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $service->ID ), 'full' ); 
                 ?>     
-                    <div class="tabs-panel <?php echo $active ?>" id="<?php echo $service->post_name; ?>">
+                    <div class="tabs-panel <?php echo $active ?> <?php echo $service->post_name; ?>" id="<?php echo $service->post_name; ?>">
                         <div class="content">
                             <?php if($image[0]): ?>
                             <div class="col-image">

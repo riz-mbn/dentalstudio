@@ -2,46 +2,42 @@
     @include media (min-width, 1440px){
         padding: 0;
     }
+    @include media (max-width, 1024px){
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .content {
     padding-top: 60px;
 
-    .section_title {
-        color: $color-primary;
-        position: relative;
-
-        h2 {
+    h2,
+    h4 {
+        &.section_title {
+            color: $color-primary;
             position: relative;
-            letter-spacing: -2.41px;
             line-height: 1.2;
+            width: max-content;
+
             &:after {
                 content: url('../img/icon/icn-title.svg');
                 position: absolute;
-                bottom: -17px;
+                bottom: -37px;
                 right: 140px;
-            }
-        }
-
-        .after_title {
-            position: absolute;
-            bottom: -17px;
-
-            &.end {                                
-                right: 100px;
+                @include media (max-width, 1023px){
+                    display: none;
+                }
             }
 
-            &.middle {        
-                bottom: -5px;
-                left: 37%;
-            }
-
-            &.start {
-
-            }
         }
     }
 
+    section {
+        @include media (max-width, 1024px){
+            
+            padding: 60px 0 !important;
+        }
+    }
 }
 
 figure {
@@ -52,6 +48,7 @@ figure {
         right: 0;
         top:0;
         bottom: 0;
+        z-index: -1;
         
         img {
             height: 100%;
@@ -61,7 +58,6 @@ figure {
     }
     
 }
-
 
 .testimonials {
     
@@ -161,14 +157,38 @@ figure {
     }
 }
 
+.services-tabs {
+
+    &.slick-slider {
+        border-right: 0 !important;
+        padding-right: 14px;
+        padding-left: 80px;
+        margin-bottom: 30px;
+
+        .tabs-title {
+            margin-right: 30px;
+        }
+    
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            display: none !important;
+        }
+    }
+}
+
 .col-tabs {
     .services-tabs {
         border: 0;
         border-right: 2px solid #eedfcd !important;
         .tabs-title {
+            
             margin-bottom: 15px;
-            translate: all 0.3s ease;
+            transition: all 0.3s ease;
 
+            &.slick-current,
             &.is-active,
             &:hover {
                 a {
@@ -189,6 +209,26 @@ figure {
                 }
             }
 
+            &:not(.slick-current) {
+                a {
+                    .icon {
+                        background: transparent;
+                        
+                        figure {
+
+                            img {
+                                filter: none;
+                            }
+                        }
+
+                    }
+
+                    .title {
+                        color: #d0d0d0;
+                    }
+                }
+            }
+
             a {
                 padding: 0;
                 display: flex;
@@ -203,6 +243,9 @@ figure {
                         border-radius: 50px;
                         padding: 13px 10px;
                         translate: all 0.5s ease;
+                        figure {
+                            width: 42px;
+                        }
                     }
     
                     &.title {
@@ -234,29 +277,49 @@ figure {
             }
 
         }
+        
+        @include media (max-width,768px) {
+            .tabs {
+
+                &.vertical {
+
+                    > li {
+                        float: left!important;
+                    }
+                }
+                
+            }
+        }
     }
 
 }
+
+
+.btn_scroll_up {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    background: $color-primary;
+    padding: 15px 20px;
+    border-radius: 10px 10px 0 0;
+    font-size: 0;
+    cursor: pointer;
+
+    &:before {
+        content: url(../img/icon/icn-chev-up.png);
+    }
+}
+
 
 /* HERO STYLE 3 */
 .hero-s3 {
     min-height: 100vh;
     position: relative;
 
-    .bg {
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            background-image: linear-gradient( -90deg  , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.58) 40%, #fff);
-        }
-    }
 
     .hero-caption {
-        padding: 150px 0 50px;
+        padding: 150px 40px 50px;
         position: relative;
         color:$color-grey;
         min-height: 500px;
@@ -361,9 +424,37 @@ figure {
             }
         }
     }
-}
 
+    @include media (max-width,768px){
+        min-height: 100%;
 
-@include media (max-width,1024px){
+        .hero-caption {
+            padding: 50px 0 !important;
+        }
+    }
+    @include media (max-width,1024px){
 
+        .bg {
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                top: 0;
+                right: 0;
+                background-image: linear-gradient( -90deg  , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.58) 80%, #fff);
+            }
+        }
+    }
+
+    @include media (max-width,1440px){
+        min-height: 100%;
+
+        .hero-caption {
+
+            .grid-x {
+                min-height: auto;
+            }
+        }
+    }
 }

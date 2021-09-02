@@ -87,6 +87,9 @@ function mbn_enqueue_scripts(){
     wp_enqueue_style('slick', MBN_ASSETS_URI.'/vendor/slick/slick.css', [], $wp_version);
     wp_enqueue_script('slick', MBN_ASSETS_URI.'/vendor/slick/slick.min.js', [], $wp_version);
 
+    // Isotope
+    //wp_enqueue_script('nicescroll', MBN_ASSETS_URI.'/vendor/isotope/isotope.min.js', [], $wp_version);
+
     // Nicescroll
     // wp_enqueue_script('nicescroll', MBN_ASSETS_URI.'/vendor/jquery.nicescroll.min.js', [], $wp_version);
 
@@ -96,8 +99,8 @@ function mbn_enqueue_scripts(){
 
     
     // App
-    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], null );
-    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], '', true);
+    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], $wp_version);
+    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], $wp_version);
     
 
     // localize objects

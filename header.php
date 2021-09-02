@@ -12,6 +12,7 @@
 </head>
 <body <?php body_class() ?>>
 
+<button data-scroll="up" class="btn_scroll_up"><span>UP</span></button>
 <div id="wrapper"> 
     <?php 
     if( !is_front_page() ): ?>
@@ -46,19 +47,15 @@
                         </div>
                         <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
                         <nav class="mobmenu hide-for-large">
-                            <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
-                                <li class="current-menu-item"><a href="#">Home</a></li>
-                                <li><a href="#">Services</a>
-                                    <ul>
-                                        <li><a href="#">Services 1</a></li>
-                                        <li><a href="#">Services 2</a></li>
-                                        <li><a href="#">Services 3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">News & Events</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
+                            <?php
+                                wp_nav_menu( array( 
+                                    'theme_location' => 'main-menu',
+                                    'menu'         => '',
+                                    'container'    => 'ul',
+                                    'items_wrap' => '<ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">%3$s</ul>' ,
+                                    'menu_class'   => 'menu align-center dropdown',
+                                ));
+                            ?> 
                         </nav>
                     </div>
                 </div>
@@ -98,19 +95,15 @@
                             </div>
                             <span class="navicon hide-for-large" data-toggle="header">mobile menu</span>
                             <nav class="mobmenu hide-for-large">
-                                <ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">
-                                    <li class="current-menu-item"><a href="#">Home</a></li>
-                                    <li><a href="#">Services</a>
-                                        <ul>
-                                            <li><a href="#">Services 1</a></li>
-                                            <li><a href="#">Services 2</a></li>
-                                            <li><a href="#">Services 3</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">News & Events</a></li>
-                                    <li><a href="#">Contact Us</a></li>
-                                </ul>
+                                <?php
+                                    wp_nav_menu( array( 
+                                        'theme_location' => 'main-menu',
+                                        'menu'         => '',
+                                        'container'    => 'ul',
+                                        'items_wrap' => '<ul class="menu accordion-menu" data-multi-open="false" data-accordion-menu data-submenu-toggle="true">%3$s</ul>' ,
+                                        'menu_class'   => 'menu align-center dropdown',
+                                    ));
+                                ?> 
                             </nav>
                         </div>
                     </div>

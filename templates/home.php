@@ -4,7 +4,8 @@
 
 ?>
     <section class="hero hero-s3">
-        <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/hero-banner.jpg" alt="" width="1920" height="967"></figure>
+        <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/hero-banner.jpg" alt="" width="1920" height="967"></figure>
+        <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/hero-banner-mob.jpg" alt="" width="1155" height="612"></figure>
         <div class="hero-caption">
             <div class="grid-container"> 
                 <div class="grid-x grid-margin-x">
@@ -35,9 +36,9 @@
                 </div>
                 <div class="cell large-8 col-copy">
                     <div class="text_wrap">
-                        <div class="section_title">
-                            <h2 class="">Request An Appointment</h2>
-                            <!-- <figure class="after_title end"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title.svg" alt="" width="448" height="42" /></figure>-->
+                        <div class="section_title_wrap">
+                            <h2 class="section_title">Request An Appointment</h2>
+                            <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                         </div>
                         <p class="smal">To request a consultation or service, please fill out the form below and our scheduling team will call you to book your appointment. Alternatively, you can call the number below during office hours to speak to them directly.</p>
                         <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="4803725079" class="cta_link">(480) 372-5079</a></h4>
@@ -52,9 +53,10 @@
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell large-7 col-copy">
-                    <div class="section_title">
-                        <figure><img src="<?php echo MBN_ASSETS_URI ?>/img/logo-small.svg" alt="" width="281" height="77"/></figure>
-                        <h4>is the leading cosmetic dental surgery situated in North Scottsdale, Arizona. </h4>
+                    <div class="section_title_wrap">
+                        <figure class="sec_logo"><img src="<?php echo MBN_ASSETS_URI ?>/img/logo-small.svg" alt="" width="281" height="77"/></figure>
+                        <h4 class="section_title">is the leading cosmetic dental surgery situated in North Scottsdale, Arizona. </h4>
+                        <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                     </div>
                     <div class="separator"></div>
                     <div class="text_wrap">
@@ -71,9 +73,10 @@
     <section class="sec_testimonials">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="cell xlarge-7 large-8 col-copy">
-                    <div class="section_title">
-                        <h2 class="">What our patients say…</h2>
+                <div class="cell xlarge-7 large-8 col-copy">      
+                    <div class="section_title_wrap">
+                        <h2 class="section_title">What our patients say…</h2>
+                        <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                     </div>
                     <h4>Results matter, and we pride ourselves on the work we do. </h4> <h4>Read some of our patient reviews taken directly from Google.</h4>
                 </div>
@@ -86,13 +89,15 @@
         </div>
     </section>
     <section class="sec_why">
-        <div class="grid-container">
-            <div class="section_title end ">
-                <h2 class=" text-center">Why Dental Studio 101?</h2>
+        <div class="grid-container">               
+            <div class="section_title_wrap">
+                <h2 class="section_title text-center">Why Dental Studio 101?</h2>
+                <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
             </div>
             <div class="grid-x grid-margin-x row-top">
                 <div class="cell large-5 medium-12 col-image">
-                    <figure class=""><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental.jpg" alt="" width="515" height="548" /></figure>
+                    <figure class="show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental.jpg" alt="" width="515" height="548" /></figure>
+                    <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental_mob.jpg" alt="" width="515" height="548" /></figure>
                 </div>
                 <div class="cell large-7 col-copy">
                     <p>We are committed to providing premier customer service and industry-leading cosmetic dentistry to all of our patients. To achieve this, Dr Peterson Boyle and the team at Dental Studio 101 use advanced, cutting-edge technology, and a close relationship with our in-house esthetic laboratory so that our cosmetic outcomes are in line with what our patients desire.</p>
@@ -112,12 +117,13 @@
     <section class="sec_what">
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
-                <div class="cell large-7 col-copy">
-                    <div class="section_title ">
-                        <h2 class="">What Cosmetic Dentistry<br/>Services Do We Offer?</h2>
+                <div class="cell large-8 medium-12 col-copy">                    
+                    <div class="section_title_wrap">
+                        <h2 class="section_title">What Cosmetic Dentistry<br/>Services Do We Offer?</h2>
+                        <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                     </div>
                 </div>
-                <div class="cell large-5 col-image">
+                <div class="cell large-4 medium-12 col-image">
                 </div>
             </div>
         </div>
@@ -127,8 +133,9 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x col-title">
                 <div class="cell large-6">
-                    <div class="section_title small">
-                        <h2>Have A Question About Our Services?</h2>
+                    <div class="section_title_wrap">
+                        <h2 class="section_title">Have A Question About Our Services?</h2>
+                        <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                     </div>
                 </div>
                 <div class="cell large-6 col-copy">
@@ -150,8 +157,9 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-12 col-copy">
-                    <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_smile_grp.jpg" alt="" width="1410" height="728" /></figure>
-                    <div class="section_title">
+                    <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_smile_grp.jpg" alt="" width="1410" height="728" /></figure>
+                    <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_smile_gallery_mob.jpg" alt="" width="984" height="844" /></figure>
+                    <div class="section_title_wrap">
                         <h1>Smile</h1>
                         <h1>Gallery</h1>
                         <div class="button small"><a href="#" class="">View More</a></div>
@@ -164,7 +172,7 @@
         <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_recent_post.png" alt="" width="1920" height="596" /></figure>
         <div class="grid-container">
             <h4 class="section_title text-center">Recent Posts</h4>
-            <div class="grid-x grid-margin-x">
+            <div class="grid-x grid-margin-x recent_posts">
                 <?= do_shortcode('[mbn_recent_posts]'); ?>
             </div>
         </div>
