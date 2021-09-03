@@ -156,3 +156,25 @@ require MBN_DIR_PATH.'/includes/shortcodes.php';
 require MBN_DIR_PATH.'/includes/public-hooks.php';
 require MBN_DIR_PATH.'/includes/admin-hooks.php';
 
+
+/** Get page type, eg. for customizer option */
+function mbn_page_type() {
+	global $template;
+
+	if ( strpos( $template, 'team.php' ) ) {
+		return 'team';
+	}
+
+	if ( is_single() ) {
+		return 'single';
+	}
+	if ( is_404() ) {
+		return '404';
+	}
+	if ( is_page() ) {
+		return 'single_page';
+	}
+	if ( is_search() ) {
+		return 'blog';
+	}
+}
