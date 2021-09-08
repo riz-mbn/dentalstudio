@@ -321,7 +321,7 @@ figure {
     .hero-caption {
         padding: 150px 40px 50px;
         position: relative;
-        color:$color-grey;
+        color: $body-color;
         min-height: 500px;
         h5 {
             line-height: 1.4;
@@ -341,6 +341,11 @@ figure {
         }
         .text_wrap {
             margin-bottom: 35px;
+        }
+        p {
+            strong {
+                color: $color-black;
+            }
         }
     }
 

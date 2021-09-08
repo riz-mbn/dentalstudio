@@ -41,7 +41,7 @@
                             <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                         </div>
                         <p class="smal">To request a consultation or service, please fill out the form below and our scheduling team will call you to book your appointment. Alternatively, you can call the number below during office hours to speak to them directly.</p>
-                        <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="4803725079" class="cta_link">(480) 372-5079</a></h4>
+                        <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="tel:4803725079" class="cta_link">(480) 372-5079</a></h4>
                     </div>
                     <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]') ?>
                 </div>
@@ -140,7 +140,7 @@
                 </div>
                 <div class="cell large-6 col-copy">
                     <p>We’re here to answer your questions and work out the best solution for you.  To request a free phone consultation, please fill out the form below and our scheduling team will call you to arrange a consultation time. Alternatively, you can call the number below during office hours to speak to them directly.</p>
-                    <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="4803725079">(480) 372-5079</a></h4>
+                    <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="tel:4803725079">(480) 372-5079</a></h4>
                 </div>
             </div>
             <div class="grid-x grid-margin-x col-form">
