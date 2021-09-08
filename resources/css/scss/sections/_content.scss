@@ -102,6 +102,7 @@ figure {
     
             .client_review {
                 p {
+                    color: $color-grey;
                     font-size: 17px;
                     line-height: 25px;
                     text-align: justify;
@@ -188,23 +189,23 @@ figure {
             margin-bottom: 15px;
             transition: all 0.3s ease;
 
-            &.slick-current,
+            &.slick-current.is-active,
             &.is-active,
             &:hover {
                 a {
                     .icon {
-                        background: $color-dark;
+                        background: $color-dark !important;
                         figure {
 
                             img {
-                                filter: brightness(0) invert(1);
+                                filter: brightness(0) invert(1) !important;
                             }
                         }
 
                     }
 
                     .title {
-                        color: $color-dark;
+                        color: $color-dark !important;
                     }
                 }
             }
@@ -341,10 +342,11 @@ figure {
         }
         .text_wrap {
             margin-bottom: 35px;
-        }
-        p {
-            strong {
-                color: $color-black;
+            
+            p {
+                strong {
+                    color: $color-black;
+                }
             }
         }
     }

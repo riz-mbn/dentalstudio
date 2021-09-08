@@ -23,7 +23,7 @@
 
                 figure {
                     position: absolute;
-                    left: -136px;
+                    left: -85px;
                     width: 712px;
                     z-index: 1;
                     top: -46px;
@@ -518,6 +518,12 @@
                 .cta_link {
                     display: block;
                 }
+
+                .gform_footer {
+                    .button {
+                        min-width: 234px;
+                    }
+                }
             }
             
         }
@@ -629,6 +635,12 @@
                 }
                 .col-copy {
                     padding: 30px !important;
+
+                    .text_wrap {
+                        p {
+                            color: $color-grey;
+                        }
+                    }
                 }
             }
 

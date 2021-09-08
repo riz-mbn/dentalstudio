@@ -40,7 +40,7 @@
                             <h2 class="section_title">Request An Appointment</h2>
                             <figure class="hide-for-large text-center"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-title-ques.svg" alt="" width="304" height="29" /></figure>
                         </div>
-                        <p class="smal">To request a consultation or service, please fill out the form below and our scheduling team will call you to book your appointment. Alternatively, you can call the number below during office hours to speak to them directly.</p>
+                        <p class="smal grey">To request a consultation or service, please fill out the form below and our scheduling team will call you to book your appointment. Alternatively, you can call the number below during office hours to speak to them directly.</p>
                         <h4 class="semibold">Or call to speak to one of our schedulers.  <a href="tel:4803725079" class="cta_link">(480) 372-5079</a></h4>
                     </div>
                     <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]') ?>
@@ -60,8 +60,8 @@
                     </div>
                     <div class="separator"></div>
                     <div class="text_wrap">
-                        <p>Our highly advanced dental spa incorporates some of the most cutting-edge technology available while offering a relaxing, spa-like atmosphere. Our goal is to provide the highest standard of cosmetic dental, preventative dentistry and restorative dentistry while offering a warm and calm environment for our patients.</p>
-                        <p>The team and facility at Dental Studio 101 is one of the most highly awarded among Scottsdale cosmetic dentists. We believe we offer the most professional, personalized care available, making Dental Studio 101 the best place to come for cosmetic dental surgery in Scottsdale and across the Valley.</p>
+                        <p class="grey">Our highly advanced dental spa incorporates some of the most cutting-edge technology available while offering a relaxing, spa-like atmosphere. Our goal is to provide the highest standard of cosmetic dental, preventative dentistry and restorative dentistry while offering a warm and calm environment for our patients.</p>
+                        <p class="grey">The team and facility at Dental Studio 101 is one of the most highly awarded among Scottsdale cosmetic dentists. We believe we offer the most professional, personalized care available, making Dental Studio 101 the best place to come for cosmetic dental surgery in Scottsdale and across the Valley.</p>
                     </div>
                     <figure><img src="<?php echo MBN_ASSETS_URI ?>/img/img_google_stars.svg" alt="" width="249" height="62"/></figure>
                 </div>
@@ -100,13 +100,13 @@
                     <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental_mob.jpg" alt="" width="515" height="548" /></figure>
                 </div>
                 <div class="cell large-7 col-copy">
-                    <p>We are committed to providing premier customer service and industry-leading cosmetic dentistry to all of our patients. To achieve this, Dr Peterson Boyle and the team at Dental Studio 101 use advanced, cutting-edge technology, and a close relationship with our in-house esthetic laboratory so that our cosmetic outcomes are in line with what our patients desire.</p>
-                    <p>In our state-of-the-art North Scottsdale cosmetic dentist facility, we use environmentally-friendly digital x-rays, highly advanced digital cameras that allow you to see procedures from the dentists’ point of view. We stay up to date in not only equipment but also continuing education for our entire team to bring our patients the latest in minimally invasive technologies.</p>
+                    <p class="grey">We are committed to providing premier customer service and industry-leading cosmetic dentistry to all of our patients. To achieve this, Dr Peterson Boyle and the team at Dental Studio 101 use advanced, cutting-edge technology, and a close relationship with our in-house esthetic laboratory so that our cosmetic outcomes are in line with what our patients desire.</p>
+                    <p class="grey">In our state-of-the-art North Scottsdale cosmetic dentist facility, we use environmentally-friendly digital x-rays, highly advanced digital cameras that allow you to see procedures from the dentists’ point of view. We stay up to date in not only equipment but also continuing education for our entire team to bring our patients the latest in minimally invasive technologies.</p>
                 </div>
             </div>
             <div class="grid-x grid-margin-x row-bottom">
                 <div class="cell large-5 medium-12 col-copy">
-                    <p>It is this level of expertise in both technology and dentistry that has led to Dental Studio 101 gaining the reputation as the best cosmetic dentist in Scottsdale and for Dr Peterson Boyle as the “go-to dentist” for cosmetic dental procedures across the Valley.</p>
+                    <p class="grey">It is this level of expertise in both technology and dentistry that has led to Dental Studio 101 gaining the reputation as the best cosmetic dentist in Scottsdale and for Dr Peterson Boyle as the “go-to dentist” for cosmetic dental procedures across the Valley.</p>
                 </div>
                 <div class="cell large-7 col-image">
                     <figure class=""><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental_2.jpg" alt="" width="810" height="474" /></figure>

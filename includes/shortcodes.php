@@ -40,7 +40,7 @@ function mbn_testimonials() {
                 <div class="testimonial_item <?php echo $class; ?>">
                     <div class="item_wrap">
                         <div class="text_wrap client_review">
-                            <p class=""><?php echo get_the_content(); ?></p>
+                            <p class="grey"><?php echo get_the_content(); ?></p>
                         </div>
                         <?php if($client_rating):?><div class="client_rating"><?php echo $client_rating ?></div><?php endif; ?>
                         <?php if($client_name):?><div class="client_name"><?php echo esc_html($client_name); ?></div><?php endif; ?>
