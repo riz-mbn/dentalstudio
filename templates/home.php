@@ -147,7 +147,7 @@
                 
                 <div class="cell large-2"></div>
                 <div class="cell large-8 col-copy">
-                    <?= do_shortcode('[gravityform id="1" title="false" description="false" ajax="false"]') ?>
+                    <?= do_shortcode('[gravityform id="2" title="false" description="false" ajax="false"]') ?>
                 </div>
                 <div class="cell large-2"></div>
             </div>
@@ -157,8 +157,8 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-12 col-copy">
-                    <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_smile_grp.jpg" alt="" width="1410" height="728" /></figure>
-                    <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_smile_gallery_mob.jpg" alt="" width="984" height="844" /></figure>
+                    <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_grp_2.jpg" alt="" width="1410" height="728" /></figure>
+                    <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_gallery_mob_2.jpg" alt="" width="984" height="844" /></figure>
                     <div class="section_title_wrap">
                         <h1>Smile</h1>
                         <h1>Gallery</h1>

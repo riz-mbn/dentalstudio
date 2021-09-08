@@ -29,6 +29,13 @@
             font-size: 20px;
             border-top: 1px solid #d1c0ac;
             border-bottom: 1px solid #d1c0ac;
+            color: $color-grey;
+
+            &:hover,
+            strong {
+                color: $color-primary;
+            }
+
         }
     }
 
@@ -113,6 +120,7 @@
             li.menu-item {
                 padding-bottom: 18px;
                 a {
+                    color: $color-grey;
                     padding: 0px;
                     font-size: 20px;
                 }

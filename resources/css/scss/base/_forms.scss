@@ -165,7 +165,7 @@ select {
 
 
 //Custom Class
-.field, .fields {
+.field, .fields, .gfield {
     position: relative;
     margin-bottom: 14px;
     text-align: left;
@@ -266,6 +266,11 @@ select {
 }
 
 
+.gform_submission_error {
+    font-size: 20px;
+}
+
+
 //For gravity form
 .ginput_container_name {
     > span {
@@ -286,7 +291,7 @@ select {
 
 //Gravity form custom
 textarea.small {
-	height: 150px;
+	height: 132px;
 }    
 textarea.medium {
 	height: 200px;

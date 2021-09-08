@@ -30,14 +30,16 @@
                     </div>
                     <div class="cell large-2 large-offset-1 medium-6">
                         <h3 class="col-title">Pages</h3>
-                        <div class="footer_menu">                
-                            <ul class="menu vertical">
-                                <li class="menu-item"><a href="<?php echo home_url() ?>">About</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Services</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Testimonials</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Contact Us</a></li>
-                                <li class="menu-item"><a href="<?php echo home_url() ?>/">Blog</a></li>
-                            </ul>
+                        <div class="footer_menu">           
+                            <?php
+                                wp_nav_menu( array( 
+                                    'theme_location' => 'footer-menu',
+                                    'menu'         => '',
+                                    'container'    => 'ul',
+                                    'items_wrap' => '<ul class="menu vertical">%3$s</ul>' ,
+                                    'menu_class'   => 'menu vertical',
+                                ));
+                            ?> 
                         </div>
                     </div>
                 </div>
