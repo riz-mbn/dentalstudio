@@ -228,7 +228,7 @@ select {
             top:-10px;
             right: -10px;
             bottom: -10px;
-            background: rgba($color-alert, 0.3);
+            background: transparent;
             z-index: -1;
         }
         &.js {
@@ -241,7 +241,7 @@ select {
             color: darken($color-alert, 8%);
         }
         input, select, textarea {
-            border-color: lighten($color-alert, 20%);
+            border-color: #FAE8DA;
             & + span {
                 color: darken($color-alert, 8%);
                 font-size: 14px;
@@ -261,10 +261,7 @@ select {
         display: block;
         margin-bottom: -5px;
     }
-
-
 }
-
 
 .gform_submission_error {
     font-size: 20px;

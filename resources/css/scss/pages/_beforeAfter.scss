@@ -1,0 +1,80 @@
+.section_header_before_after {
+    color: $color-black;
+    padding: 84px 0 114px;
+    
+    .highlight {
+        color: $color-primary;
+    }
+}
+
+.section_patient {
+    background-image: linear-gradient(to top, rgba(244, 228, 212, 0), #f4e4d4);
+
+    .img_caption {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 65px;
+    }
+
+    .cols2-s4 {
+        
+        .large-order-2 {
+            
+            .col-image {
+                margin-right: calc((-100vw - -1440px) / 2);
+                margin-left: -30px;
+            }
+
+        }
+            
+        .col-image {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .large-order-1 {
+            &.col-copy {
+                padding-left: 0;
+                padding-right: 60px;
+            }
+        }
+        
+        .col-copy {
+            padding-right: 0;
+            padding-left: 20px;
+        }
+
+    }
+}
+
+.before_after {
+
+    .section_title {        
+
+        h1 {
+            letter-spacing: -3.11px;
+        }
+
+    }
+
+    .sec_gallery {       
+
+        .col-copy {
+            position: relative;
+
+            &:before {
+                content: '';
+                background: url(../img/bgs/sec_gallery.jpg) no-repeat;
+                width: 378px;
+                height: 815px;
+                position: absolute;
+                left: -30px;
+                top: -45px;
+                z-index: -1;
+            }
+
+        }
+
+    }
+}

@@ -72,6 +72,9 @@
 @import "./base/components";
 @import "./base/animations"; 
 
+// BLOCKS -------
+@import "./blocks/two-columns-s4";
+
 // SECTIONS -------
 @import "./sections/header";
 @import "./sections/content";
@@ -81,6 +84,7 @@
 // PAGES
 @import "./pages/home";
 @import "./pages/team";
+@import "./pages/beforeAfter";
 
 
 //PLUGINS
