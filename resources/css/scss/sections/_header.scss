@@ -71,6 +71,14 @@ header {
 						a {
 							color: $color-white;
 						}
+
+						.submenu {
+							li {
+								a {
+									color: $color-white;
+								}
+							}
+						}
 					}		
 					.navutil {
 						a {
@@ -205,11 +213,25 @@ header {
 			.navmenu {
 				transition: all 0.3s ease;
 
-				li.page_item {
-					
-					a {
-						&:first-child {
-							padding-left: 0;
+				ul.menu {
+					> li {
+
+						&.menu-item {
+						
+							height: 80px;
+							align-items: center;
+						}
+	
+					}
+				}
+
+				li{
+					&.menu_item {
+						
+						a {
+							&:first-child {
+								padding-left: 0;
+							}
 						}
 					}
 				}
@@ -240,16 +262,35 @@ header {
 							right: 20px;
 							margin-top: -6px;
 						}
+
+						@include media(max-width,1023px) {
+							padding-right: 20px;
+
+							&:after {
+								right: 0;
+							}
+						}
 					}
 				}
 
 				.submenu {
-					background: lighten($color-black, 20%);
+					background: $color-black;
 					padding: 10px 0;
 					li {
 						display: block;
 						a {
+							color: $color-white;	
 							padding: 15px 20px;
+						}
+						&.is-active,
+						&:hover {
+							a {
+								color: $color-white;	
+							}	
+						} 
+
+						&:hover {
+							background: $color-primary;
 						}
 					}
 				}

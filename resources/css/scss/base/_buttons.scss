@@ -309,6 +309,7 @@
 
     
     &.small {   
+        font-size: 20px;
         color: $color-primary;
         text-transform: capitalize;
         box-shadow: none !important;
@@ -321,7 +322,7 @@
         min-width: auto;
         transition:all 0.3s ease;
 
-        a {
+        span {
             padding-right: 20px;
             position: relative;
             color: $color-link !important;
@@ -337,7 +338,7 @@
         
         &:hover {
             
-            a {                
+            span {                
                 padding-right:40px;
                 color: $color-link !important;
 

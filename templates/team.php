@@ -54,8 +54,8 @@
 					</div>
 				</div>
 				<div class="btn_group">
-					<div class="button primary medium"><a href="#">Request An Appointment</a></div>
-					<div class="button small"><a href="#" class="">Meet Dr. Peterson Boyle</a></div>
+					<div class="button primary medium"><a href="<?php echo home_url() ?>/contact-us">Request An Appointment</a></div>
+					<div class="button small"><a href="<?php echo home_url() ?>/dr-megan-peterson-boyle" class="">Meet Dr. Peterson Boyle</a></div>
 				</div>	
 				<div class="logo_group">			
 					<figure class="img_request">
@@ -100,8 +100,8 @@
 					</div>
 				</div>
 				<div class="btn_group">
-					<div class="button primary medium"><a href="#">Request An Appointment</a></div>
-					<div class="button small"><a href="#" class="">Meet Dr. Robert Koch</a></div>
+					<div class="button primary medium"><a href="<?php echo home_url() ?>/contact-us">Request An Appointment</a></div>
+					<div class="button small"><a href="<?php echo home_url() ?>/dr-robert-koch/" class="">Meet Dr. Robert Koch</a></div>
 				</div>	
 				<div class="logo_group">			
 					<figure class="img_request">

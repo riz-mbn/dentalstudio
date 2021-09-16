@@ -75,3 +75,55 @@ function services_post() {
     );
 }
 add_action( 'init', 'services_post' ); 
+
+
+
+function smilegallery_posttype(){
+    register_post_type('smilegallery',
+        array(
+            'labels' => array(
+            'name' => __( 'Veneers Gallery' ),
+            'singular_name' => __('smilegallery')
+        ),
+            'public' => true,
+            'has_archive' => true,
+            'exclude_from_search'=>true,
+            'rewrite' => array('slug' => 'smilegallery'),
+            'supports'	=>	array('title', 'editor','page-attributes','thumbnail', 'custom-fields')
+        )
+    );
+} add_action( 'init', 'smilegallery_posttype' );
+
+
+function cosmeticgallery_posttype(){
+    register_post_type('cosmeticgallery',
+        array(
+            'labels' => array(
+            'name' => __( 'Cosmetic Gallery' ),
+            'singular_name' => __('cosmeticgallery')
+        ),
+            'public' => true,
+            'has_archive' => true,
+            'exclude_from_search'=>true,
+            'rewrite' => array('slug' => 'cosmeticgallery'),
+            'supports'	=>	array('title', 'editor','page-attributes','thumbnail', 'custom-fields')
+        )
+    );
+} add_action( 'init', 'cosmeticgallery_posttype' );
+
+
+function testiwritten_posttype(){
+    register_post_type('testiwritten',
+        array(
+            'labels' => array(
+            'name' => __( 'Testimonial Written' ),
+            'singular_name' => __('testiwritten')
+        ),
+            'public' => true,
+            'has_archive' => true,
+            'exclude_from_search'=>true,
+            'rewrite' => array('slug' => 'testiwritten'),
+            'supports'	=>	array('title', 'editor','page-attributes','thumbnail', 'custom-fields')
+        )
+    );
+} add_action( 'init', 'testiwritten_posttype' );

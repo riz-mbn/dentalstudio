@@ -12,27 +12,53 @@
     padding: 0;
 }
 
-ul.list {
+.alignleft {
+    float: left;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    position: relative;
+
+    @include media(max-width,1023px){
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+.alignright {
+    float: right;
+    margin-left: 50px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+ul {
     margin-left: 0;
+    
+    &.unbulleted {
+        
+    }
 
-    li {
-        list-style: none;  
-        margin-bottom: 20px; 
-        display: flex;
-        align-items: center;
-
-        &::before {
-            content: '•';
-            color: $color-primary;
-            font-size: 26px;
-            margin-right: 10px;
+    &.list {
+        li {
+            display: flex;
+            align-items: center;
         }
+
+    }
+
+    li:not(.menu-item):not(.page-item){
+        //list-style: none;  
+        margin-bottom: 20px;
+        margin-left: 20px;
+        align-items: flex-start;
+        list-style-image: url('../img/img-bullet.png');
         
         h4,
         p {
             margin-bottom: 0;
             color: $color-grey;
             font-weight: 600;
+            line-height: 1;
         }
 
         @include media (max-width, 1023px){
@@ -42,7 +68,7 @@ ul.list {
 }
 
 .content {
-    // padding-top: 60px;
+    padding-top: 60px;
 
     h2,
     h4 {
@@ -657,13 +683,6 @@ figure {
 .section_meet_megan {
     padding: 108px 0 60px;
 
-    .subtitle {
-        text-transform: uppercase;
-        color: $color-primary;
-        font-weight: 600;
-        margin-bottom: 0;
-    }
-
     .section_title {
         color: $color-primary;
 
@@ -676,6 +695,13 @@ figure {
 
         strong {
             color: $color-grey;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+
+        li p {
+            margin-bottom: 0;
         }
     }
 

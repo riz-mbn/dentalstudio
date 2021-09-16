@@ -162,7 +162,7 @@
                     <div class="section_title_wrap">
                         <h1>Smile</h1>
                         <h1>Gallery</h1>
-                        <div class="button small"><a href="#" class="">View More</a></div>
+                        <a href="#" class="button small"><span>View More</span></a>
                     </div>
                 </div>
             </div>

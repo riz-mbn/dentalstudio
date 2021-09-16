@@ -11,7 +11,7 @@
                     <h1><span class="highlight">Cosmetic</span></h1>
                     <h1>Dental <span class="highlight">Gallery</span></h1>
                 </div>
-                <div class="cell large-7 col-copy align-self-middle">
+                <div class="cell large-6 large-offset-1 col-copy align-self-middle">
                     <p class="">Here at Dental Studio 101, we put our knowledge and experience to work to ensure our patients have the beautiful smile they’ve always wanted. Our caring and gentle team members and dentists are proud to help restore confidence by creating healthy and attractive smiles. Scroll through our gallery below to see a few examples of the transformations Dental Studio 101 has completed.</p>
                 </div>
             </div>
@@ -20,10 +20,16 @@
     <section class="section_patient">
         <div class="grid-container">
             <div class="grid-x grid-margin-x cols2-s4">
-                <div class="cell large-6">		
-                    <figure class="col-image">
-                        <img src="<?php echo MBN_ASSETS_URI ?>/img/patient_1.jpg" alt="" width="960" height="367">
-                    </figure>		
+                <div class="cell large-6">
+                    <div class="col-image ba-wrap">			           		                    
+                        <div class="ba-item">
+                            <img alt="Amalia After" src="<?php echo MBN_ASSETS_URI ?>/img/amalia-after.jpg">
+                            <div class="resize">                            
+                                <img alt="Amalia Before" src="<?php echo MBN_ASSETS_URI ?>/img/amalia-before.jpg">
+                            </div>
+                            <span class="handle"></span>
+                        </div>
+                    </div>
                     <div class="img_caption">
                         <span>Before</span>
                         <span>Patient #1</span>
@@ -40,10 +46,16 @@
     <section class="section_patient">
         <div class="grid-container">
             <div class="grid-x grid-margin-x cols2-s4">
-                <div class="cell large-6 large-order-2">		
-                    <figure class="col-image">
-                        <img src="<?php echo MBN_ASSETS_URI ?>/img/patient_2.jpg" alt="" width="960" height="367">
-                    </figure>		
+                <div class="cell large-6 large-order-2">
+                    <div class="col-image ba-wrap">			                    
+                        <div class="ba-item">
+                            <img alt="Brandi After" src="<?php echo MBN_ASSETS_URI ?>/img/brandi-after.jpg">
+                            <div class="resize">                            
+                                <img alt="Brandi Before" src="<?php echo MBN_ASSETS_URI ?>/img/brandi-before.jpg">
+                            </div>
+                            <span class="handle"></span>
+                        </div>
+                    </div>                        	
                     <div class="img_caption">
                         <span>Before</span>
                         <span>Patient #1</span>
@@ -60,10 +72,16 @@
     <section class="section_patient">
         <div class="grid-container">
             <div class="grid-x grid-margin-x cols2-s4">
-                <div class="cell large-6">		
-                    <figure class="col-image">
-                        <img src="<?php echo MBN_ASSETS_URI ?>/img/patient_3.jpg" alt="" width="960" height="367">
-                    </figure>		
+                <div class="cell large-6">	
+                    <div class="col-image ba-wrap">	
+                        <div class="ba-item">
+                            <img alt="Glena After" src="<?php echo MBN_ASSETS_URI ?>/img/glena-after.jpg">
+                            <div class="resize">                            
+                                <img alt="Glena Before" src="<?php echo MBN_ASSETS_URI ?>/img/glena-before.jpg">
+                            </div>
+                            <span class="handle"></span>
+                        </div>
+                    </div>
                     <div class="img_caption">
                         <span>Before</span>
                         <span>Patient #1</span>
@@ -80,10 +98,16 @@
     <section class="section_patient">
         <div class="grid-container">
             <div class="grid-x grid-margin-x cols2-s4">
-                <div class="cell large-6 large-order-2">		
-                    <figure class="col-image">
-                        <img src="<?php echo MBN_ASSETS_URI ?>/img/patient_4.jpg" alt="" width="600" height="367">
-                    </figure>		
+                <div class="cell large-6 large-order-2">
+                    <div class="col-image ba-wrap">		
+                        <div class="ba-item">
+                            <img alt="Jaco After" src="<?php echo MBN_ASSETS_URI ?>/img/jaco-after.jpg">
+                            <div class="resize">                            
+                                <img alt="Jaco Before" src="<?php echo MBN_ASSETS_URI ?>/img/jaco-before.jpg">
+                            </div>
+                            <span class="handle"></span>
+                        </div>
+                    </div>
                     <div class="img_caption">
                         <span>Before</span>
                         <span>Patient #1</span>

@@ -118,7 +118,7 @@ function mbn_services_tab() {
                             <div class="col-copy">
                                 <h3><?php echo $service->post_title; ?></h3>
                                 <p><?php echo $service->post_content; ?></p>
-                                <div class="button small"><a href="#" class="">Learn More</a></div>
+                                <a href="#" class="button small"><span>Learn More</span></a>
                             </div>
                         </div>
                     </div>
@@ -158,3 +158,31 @@ function mbn_recent_posts(){
     wp_reset_postdata();
 }
 add_shortcode('mbn_recent_posts', 'mbn_recent_posts');
+
+function before_after_slider($atts){
+
+    $before = $atts['before'];
+    $after = $atts['after'];
+    $align = $atts['align'];
+
+    if( $align == 'left' ) {
+        $align = 'alignleft';
+    }
+    else if( $align == 'right' )  {
+        $align = 'alignright';        
+    }
+    else {
+        $align = '';
+    }
+  ?>
+      
+      <div class="ba-item <?php echo $align; ?>">
+          <img alt="Image After" src="<?php echo $after; ?>">
+          <div class="resize">                            
+              <img alt="Image Before" src="<?php echo  $before;?>">
+          </div>
+          <span class="handle"></span>
+      </div>
+  <?php
+  }
+  add_shortcode('before_after_slider', 'before_after_slider');

@@ -12,8 +12,8 @@
 
 // Grids
 @include foundation-xy-grid-classes;
-// @include foundation-grid;
-// @include foundation-flex-grid;
+@include foundation-grid;
+@include foundation-flex-grid;
 
 // Generic components
 @include foundation-button;
@@ -71,6 +71,7 @@
 @import "./base/buttons";
 @import "./base/components";
 @import "./base/animations"; 
+@import "./base/global"; 
 
 // BLOCKS -------
 @import "./blocks/two-columns-s4";
