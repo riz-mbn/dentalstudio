@@ -337,6 +337,21 @@ header {
 
 					}
 				}
+				.icon_blurb {
+					.icon_img {
+				
+						&.icn_phone {
+							background-image: url(../img/icon/icn-phone.svg);
+							width: 32px;
+							height: 32px;
+							background-size: cover;
+							
+							&.black {			
+									filter: brightness(0%);
+							}
+						}
+					}
+				}
 			}
 			
 			.navicon {

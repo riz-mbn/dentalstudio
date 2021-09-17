@@ -2,42 +2,40 @@
 <div id=contact>
 	<div class=block1>
 		<div class=row>
-			<div class='large-6 large-push-6 columns left-cont'>
-				<div class=row>
-					<div class=cont-left-width>
-						<div class='cont'>
-							<h1><?php the_title();?></h1>
-							<?php
-                                if(have_posts()) : 
-						            while(have_posts()) : the_post();
-				    			        the_content();
-					                endwhile;
-                                endif;
-                            ?>
-							<p class='line'></p>
-							<?php echo do_shortcode('[contact-form-7 id="66" title="Contact Page:Form"]');?>
-							<?php /*
-							<div class=row>
-								<div class='large-9 large-offset-2 columns btn'>
-									<a class='btn6 send-form'>SUBMIT</a>
-								</div>
+			<div class='large-6 medium-12 large-push-6 columns left-cont'>
+				<div class=cont-left-width>
+					<div class='cont'>
+						<h1><?php the_title();?></h1>
+						<?php
+							if(have_posts()) : 
+								while(have_posts()) : the_post();
+									the_content();
+								endwhile;
+							endif;
+						?>
+						<p class='line'></p>
+						<?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="false"]');?>
+						<?php /*
+						<div class=row>
+							<div class='large-9 large-offset-2 columns btn'>
+								<a class='btn6 send-form'>SUBMIT</a>
 							</div>
-							*/ ?>
-							<div class=row>
-								<div class='large-12 columns'>
-									<p style='border-top:1px solid #eceded;margin-top:100px'></p>
-								</div>
+						</div>
+						*/ ?>
+						<div class=row>
+							<div class='large-12 columns'>
+								<p style='border-top:1px solid #eceded;margin-top:100px'></p>
 							</div>
-							<div class=row>
-								<div class='large-9 large-offset-2 small-12 columns'>
-									<p class=req-txt><span class=req>*</span>Required</p>
-								</div>
+						</div>
+						<div class=row>
+							<div class='large-9 large-offset-2 small-12 columns'>
+								<p class=req-txt><span class=req>*</span>Required</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class='large-6 columns right-cont'>
+			<div class='large-6 medium-12 columns right-cont'>
 				<div class=contact-map>
 				    <?php /*
 					<iframe 

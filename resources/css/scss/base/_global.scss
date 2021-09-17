@@ -1,7 +1,32 @@
+.no-js .navbar {
+    display: none;
+}
+
+@media screen and (min-width: 40em) {
+    .no-js .navbar {
+        display: block;
+    }
+
+    .no-js .page_header {
+        display: none;
+    }
+}
 
 .row {
     padding: 30px 0;
+    max-width: $grid-container;
 }
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .gform_3 {
     .gform_footer  {
@@ -48,6 +73,17 @@
     background: transparent none repeat scroll 0% 0%;
     border: 0px none;
     top: 15% !important;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+
+    .gallery-item {        
+        width: 24%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 #studio_about {
@@ -172,6 +208,50 @@
                 }
             }
 
+        }
+    }
+}
+
+#contact {
+    .block1 {
+        .cont {
+            label {
+                font-size: 12px;
+                color: #362627;
+            }
+        }
+
+        .left-cont {
+            position: relative;
+            z-index: 2;
+            background: #fff;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        .contact-map {
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+             iframe {
+                height: 2000px;
+                border: 0;
+            }
+
+            @include media (max-width, 1023px) {
+                            
+                width: 100%;
+                height: 600px;
+                position: relative;
+                transform: translate(0%,0%); 
+                
+                iframe {                    
+                    height: 900px;
+                }
+            }
         }
     }
 }
@@ -316,6 +396,7 @@
 }
 
 .ba-item {
+    
     position: relative; overflow: hidden; vertical-align: top; max-height: 800px; width: 600px;
 
     img{width:100%;display:block;max-width:none}

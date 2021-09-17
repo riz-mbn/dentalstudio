@@ -25,7 +25,7 @@
                             <a class="phonenum" href="tel:4803725079">(480) 372-5079</a>                  
                         </div>
                         <div class="text_wrap">
-                            <a href="#" class="meet_founder">Meet our Founder - <strong>Dr. Mark Peck</strong></a>         
+                            <a href="<?php echo home_url() ?>/cosmetic-dentists/dr-mark-peck/" class="meet_founder">Meet our Founder - <strong>Dr. Mark Peck</strong></a>         
                         </div>
                     </div>
                     <div class="cell large-2 large-offset-1 medium-6">

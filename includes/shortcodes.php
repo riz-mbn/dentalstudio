@@ -174,15 +174,16 @@ function before_after_slider($atts){
     else {
         $align = '';
     }
-  ?>
-      
-      <div class="ba-item <?php echo $align; ?>">
-          <img alt="Image After" src="<?php echo $after; ?>">
-          <div class="resize">                            
-              <img alt="Image Before" src="<?php echo  $before;?>">
-          </div>
-          <span class="handle"></span>
-      </div>
-  <?php
+
+    $returnhtml .= '<div class="ba-item '. $align .'">';
+    $returnhtml .= '<img alt="Image After" src="'. $after .'" />';
+    $returnhtml .= '<div class="resize">';
+    $returnhtml .= '<img alt="Image Before" src="'.$before .'" />';
+    $returnhtml .= '</div>';
+    $returnhtml .= '<span class="handle"></span>';
+    $returnhtml .= '</div>';	
+
+    return  $returnhtml;
+
   }
   add_shortcode('before_after_slider', 'before_after_slider');

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html class="htmlclass no-js" <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php echo bloginfo('charset') ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
             <div class="hsnav-s7 sticky" data-sticky data-options="marginTop:0">
                 <div class="navbar">
                     <div class="navwrap">
-                        <a class="navlogo" href="#">
+                        <a class="navlogo" href="<?php echo home_url(); ?>">
                             <figure>
                                 <img src="<?php echo MBN_ASSETS_URI ?>/img/logo-white-small.svg" alt="" width="196" height="53">
                             </figure>
@@ -68,7 +68,7 @@
                 <div class="navbar">
                     <div class="grid-container">
                         <div class="navwrap">
-                            <a class="navlogo" href="#">
+                            <a class="navlogo" href="<?php echo home_url(); ?>">
                                 <figure>
                                     <img src="<?php echo MBN_ASSETS_URI ?>/img/logo-white-small.svg" alt="" width="196" height="53">
                                 </figure>
@@ -85,7 +85,7 @@
                                 ?> 
                             </nav>
                             <div class="navutil">
-                                <a href="#">
+                                <a href="tel:4804884852">
                                     <div class="icon_blurb">				
                                         <div class="icon_img icn_phone black"></div>		
                                         <div class="icon_txt">(480) 488-4852</div>
