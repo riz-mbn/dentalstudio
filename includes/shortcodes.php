@@ -61,13 +61,19 @@ function mbn_testimonials() {
 add_shortcode('mbn_testimonials', 'mbn_testimonials');
 
 
-function mbn_services_tab() {
+function mbn_services_tab($atts) {
+
+    $exclude = ($atts['exclude_ids']) ? $atts['exclude_ids'] : '';
+    
+    $exclude_ids = explode(',', $exclude);
+
     $args = array(  
         'post_type' => 'services_type',
         'posts_per_page' => -1, 
         'post_status' => 'publish',
         'orderby' => 'id',
-        'order' => 'asc'
+        'order' => 'asc',
+        'post__not_in' => $exclude_ids
     );
 	$wp_query = new WP_Query( $args );   
     // Get the posts from the query
@@ -84,14 +90,14 @@ function mbn_services_tab() {
                     foreach( $services as $service ): 
 
                         $icon = get_field('service_icon', $service->ID);
-
+                        $title = (get_field('service_title', $service->ID)) ?  get_field('service_title', $service->ID) : $service->post_title;
 
                         $cnt++; 
                         $active = ($cnt == 1) ? 'is-active' : '';
                     ?>
                         <div class="tabs-title <?php echo $active ?>" class=""><a href="#<?php echo $service->post_name; ?>" aria-selected="true">
                             <?php if($icon): ?><span class="icon"><figure><img src="<?php echo esc_url($icon); ?>" alt="" width="40" height=""/></figure></span><?php endif; ?>
-                            <span class="title"><?php echo $service->post_title; ?></span>
+                            <span class="title"><?php echo $title; ?></span>
                         </a></div>
                     <?php
                     endforeach;
@@ -107,18 +113,27 @@ function mbn_services_tab() {
                      $cnt++; 
                      $active = ($cnt == 1) ? 'is-active' : '';
                      $image = wp_get_attachment_image_src( get_post_thumbnail_id( $service->ID ), 'full' ); 
+                     $title = (get_field('service_title', $service->ID)) ?  get_field('service_title', $service->ID) : $service->post_title;
+                     $url = get_the_permalink( $service->ID );
+
+                     $url =  str_replace( '/'.'services_type'.'/', '/', $url );
                 ?>     
                     <div class="tabs-panel <?php echo $active ?> <?php echo $service->post_name; ?>" id="<?php echo $service->post_name; ?>">
                         <div class="content">
-                            <?php if($image[0]): ?>
                             <div class="col-image">
-                                <figure><img src="<?php echo esc_url($image[0]); ?>" alt="" width="347" height="auto"/></figure>
+                                <figure>
+                                    <?php if($image[0]): ?>
+                                        <img src="<?php echo esc_url($image[0]); ?>" alt="" width="347" height="auto"/>
+                                    <?php else : ?>
+                                        <img src="https://via.placeholder.com/347x423" alt="" width="347" height="auto"/>
+                                    <?php endif; ?>
+                            </figure>
                             </div>
-                            <?php endif; ?>
+                            
                             <div class="col-copy">
-                                <h3><?php echo $service->post_title; ?></h3>
-                                <p><?php echo $service->post_content; ?></p>
-                                <a href="#" class="button small"><span>Learn More</span></a>
+                                <h3><?php echo $title ?></h3>
+                                <p><?php echo get_field('services_excerpt',  $service->ID) ?></p>
+                                <a href="<?php echo $url ?>" class="button small"><span>Learn More</span></a>
                             </div>
                         </div>
                     </div>
@@ -149,7 +164,7 @@ function mbn_recent_posts(){
             <figure class="featured_img"><?php echo the_post_thumbnail('full') ?></figure>
             <div class="text-wrap">
                 <h4><?php the_title(); ?></h4>
-                <?php the_excerpt(); ?>
+                <p><?php echo excerpt(20); ?></p>
             </div>
         </div>
     </a>

@@ -3,7 +3,7 @@
     <div class=block1>
         <?php include_once('menu.php');?>
         <div class=cont>
-            <div class=row>
+            <div class=grid-x>
                 <div class='large-6 columns left'>
                     <?php
                         $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class=new-section>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-12 columns text-left'>
                 <p><img src="<?php bloginfo('template_url')?>/img/studio11.jpg" alt="Scottsdale Cosmetic Dentist" class="Scottsdale Cosmetic Dentist"/>
                     Serving Scottsdale and North Scottsdale areas, Dental Studio 101 is bringing a new flare to cosmetic dentistry. Our highly advanced dental spa incorporates some of the most cutting-edge technology available today. We take pride in offering a spa-like atmosphere for our patients and providing a warm and welcoming environment.
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class=block2>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-6 medium-6 columns'>
                 <div class=left>
                     <?php echo get_field('sect1_cont');?>
@@ -68,7 +68,7 @@
         <video id=vid-0 style='display:none' controls>
             <source src='<?php bloginfo('template_directory');?>/vid/videoplayback.mp4' type='video/mp4'>
         </video>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-6 medium-6 columns left text-center'>
                 <span id=play0 class='play-btn ico play-btn'></span>
             </div>
@@ -80,12 +80,12 @@
         </div>
     </div>
     <div class=block4>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-12 columns ttl text-center'>
                 <h2>WHAT COSMETIC DENTISTRY SERVICES ARE PROVIDED?</h2>
             </div>
         </div>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-4 medium-4 columns cont'>
                 <h2>Esthetic Rehabilitation</h2>
                 <p>
@@ -111,14 +111,14 @@
                 <a class=btn3 href='/porcelain-veneers-scottsdale/'>LEARN MORE</a>
             </div>
         </div>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-4 medium-4 columns cont'>
-                <h2>Dental Crowns</h2>
+                <h2>Dental Cgrid-xns</h2>
                 <p>
-                    Dental crowns are a great option when it comes to restoring damaged teeth. The porcelain crown provide the look of 
+                    Dental cgrid-xns are a great option when it comes to restoring damaged teeth. The porcelain cgrid-xn provide the look of 
                     perfect natural teeth and are strong enough to stand up to daily use for decades to come.
                 </p>
-                <a class=btn3 href='/dental-crowns-scottsdale/'>LEARN MORE</a>
+                <a class=btn3 href='/dental-cgrid-xns-scottsdale/'>LEARN MORE</a>
             </div>
             <div class='large-4 medium-4 columns cont'>
                 <h2>Cosmetic Fillings</h2>
@@ -139,7 +139,7 @@
                 <a class=btn3 href='/all-on-four-implants-scottsdale/'>LEARN MORE</a>
             </div>
         </div>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-4 medium-4 columns cont'>
                 <h2>Full-Mouth Reconstruction</h2>
                 <p>
@@ -167,15 +167,15 @@
         </div>
         
         <div class=view-more-services>
-            <div class=row>
+            <div class=grid-x>
                 <div class='large-12 columns text-right'>
-                    <a href='/services/'>VIEW MORE SERVICES <span class='ico brown-arrow'></span></a>
+                    <a href='/services/'>VIEW MORE SERVICES <span class='ico bgrid-xn-argrid-x'></span></a>
                 </div>
             </div>
         </div>
         <?php /*
         <div class="block-cta">
-            <div class=row>
+            <div class=grid-x>
                 <div class='large-12 columns text-center'>
                     <a class='btn6 btn-custom' href='https://www.smilevirtual.com/Dental-Studio-101' target="_blank">Request Your Free Virtual Consult</a>
                 </div>
@@ -184,12 +184,12 @@
         */ ?>
     </div>
     <div class=block5>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-12 columns head-title text-center'>
                 <h2><span>WRITTEN AND VIDEO </span>Testimonials</h2>
             </div>
         </div>
-        <div class='row cont1'>
+        <div class='grid-x cont1'>
             <div class='large-3 columns txt'>
                 <h2>Edward H</h2>
                 <p class=since>Customer since 2014</p>
@@ -231,7 +231,7 @@
                 </p>
             </div>
         </div><!--end cont1 //-->
-        <div class='row cont2'>
+        <div class='grid-x cont2'>
             <div class='large-12 columns text-center'>
                 <h2>Used us recently?</h2>
                 <img src='<?php echo bloginfo('template_url');?>/img/google-5star.png' alt='Dental Studio 101 - Google 5 star rating' />
@@ -262,7 +262,7 @@
         </div>
     </div>
     <div class=block6>
-        <div class='row fwidth collapse smile-gallery'>
+        <div class='grid-x fwidth collapse smile-gallery'>
             <div class='large-12 columns text-center'>
                 <img src='<?php echo bloginfo('template_url')?>/img/dental-studio-101-smile-gallery.jpg' alt='scottsdale cosmetic dentistry results' />
 				<?php //echo do_shortcode('[instagram-feed]'); ?>
@@ -270,7 +270,7 @@
         </div>
     </div>
     <div class=block7>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-7 columns left'>
                 <h2><span>Artistry In Dentistry </span>You’ll Find It Here</h2>
                 <div style='position:relative;'>
@@ -329,16 +329,16 @@
         </div>
     </div>
     <div class='block8 showmap'>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-12 columns head-title text-center'>
                 <h2><span>SCHEDULE YOUR </span>Appointment</h2>
                 <p>The staff at Dental Studio 101 is kind, compassionate and highly educated, and are here to help you through every step of your appointment.</p>
             </div>
         </div>
-        <div class=row>
+        <div class=grid-x>
             <div class='large-6 large-push-6 columns left'>
                 <?php echo do_shortcode('[contact-form-7 id="50" title="Home:Contact form"]');?>
-                <div class=row>
+                <div class=grid-x>
                     <div class='large-10 large-offset-2 medium-11 medium-offset-1 small-12 columns btn'>
                         <a class='btn6 send-form'>SCHEDULE APPOINTMENT</a>
                     </div>

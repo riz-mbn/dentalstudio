@@ -1,7 +1,7 @@
 <?php /*Template Name: Contact Us*/ get_header('inner'); ?>
-<div id=contact>
-	<div class=block1>
-		<div class=row>
+<section id="contact">
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-6 medium-12 large-push-6 columns left-cont'>
 				<div class=cont-left-width>
 					<div class='cont'>
@@ -15,23 +15,7 @@
 						?>
 						<p class='line'></p>
 						<?php echo do_shortcode('[gravityform id="3" title="false" description="false" ajax="false"]');?>
-						<?php /*
-						<div class=row>
-							<div class='large-9 large-offset-2 columns btn'>
-								<a class='btn6 send-form'>SUBMIT</a>
-							</div>
-						</div>
-						*/ ?>
-						<div class=row>
-							<div class='large-12 columns'>
-								<p style='border-top:1px solid #eceded;margin-top:100px'></p>
-							</div>
-						</div>
-						<div class=row>
-							<div class='large-9 large-offset-2 small-12 columns'>
-								<p class=req-txt><span class=req>*</span>Required</p>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -50,7 +34,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <script>
     document.addEventListener( 'wpcf7mailsent', function( event ) {
 		if ( '66' == event.detail.contactFormId ) {

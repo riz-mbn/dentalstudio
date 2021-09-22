@@ -102,8 +102,8 @@ function mbn_enqueue_scripts(){
 
     
     // App
-    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], $wp_version);
-    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], $wp_version);
+    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '1.4.9');
+    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], $wp_version, true);
     
 
     // localize objects
@@ -196,13 +196,17 @@ function excerpt($limit){
     return $excerpt;
 }
 
-
-function _remove_script_version( $src ){
-    $parts = explode( '?ver', $src );
-    return $parts[0];
+function new_excerpt_more($more) {
+    return '...';
 }
-add_filter( 'script_loader_src', '_remove_script_version', 15, 1 );
-add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
+add_filter('excerpt_more', 'new_excerpt_more');
+
+// function _remove_script_version( $src ){
+//     $parts = explode( '?ver', $src );
+//     return $parts[0];
+// }
+// add_filter( 'script_loader_src', '_remove_script_version', 15, 1 );
+// add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
 
 
 /*pagination*/
@@ -235,8 +239,8 @@ function custom_pagination($numpages, $pagerange, $paged) {
         'end_size'		=> 1,
         'mid_size'		=> $pagerange,
         'prev_next'		=> True,
-        'prev_text'		=> __('« Prev'),
-        'next_text'		=> __('Next »'),
+        'prev_text'		=> __('Prev'),
+        'next_text'		=> __('Next'),
         'type'			=> 'plain',
         'add_args'		=> false,
         'add_fragment'	=> ''
@@ -246,7 +250,6 @@ function custom_pagination($numpages, $pagerange, $paged) {
 
     if($paginate_links) {
         echo "<nav class='custom-pagination'>";
-        echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
         echo $paginate_links;
         echo "</nav>";
     }

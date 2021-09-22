@@ -1,45 +1,61 @@
-<?php get_header() ?>
-<section class="page-content">
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x blog-lists">
+<?php /*Template Name: Blog*/ get_header(); 
+					
+$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+$custom_args = array(
+	'post_type'			=> 'post',
+		'post_status'		=> 'publish',
+		'posts_per_page'	=> 10,
+		'orderby'			=> 'id',
+		'order'				=> 'desc',
+		'paged'				=> $paged
+);
 
-                <?php while ( have_posts() ) : the_post(); ?>
+$custom_query = new WP_Query( $custom_args );
+						
+						?>
+<div id="blog">
+	<div class="grid-container block1">
+		<div class="grid-x">
+			<div class='large-12 columns ttl'>
+				<h1>Blog</h1>
+			</div>
+		</div>
+	</div>
+	<div class="grid-container block2">
+		<div class="grid-x">
+			<div class='large-12 columns'>
+				<div class="blogpost">
+					<?php 
 
-                    <div class="cell large-4 medium-6 small-12">
-                        <article>
-                            <div class="wp-block-image">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            
-                            <h5><a href="<?= get_the_permalink(); ?>"><?php the_title(); ?></a></h5>
-                            <small>
-                                <?php 
-                                    $controlPostCategory = get_the_category(get_the_ID());
-                                    $postCategoryLength = count($controlPostCategory);
-                                    $postCtr = 1;
-
-                                ?>
-                                <?php foreach ($controlPostCategory as $pc): ?>
-                                    <?= $pc->name ?><?= $postCtr != $postCategoryLength ? ',' :''; ?>
-                                <?php $postCtr++; endforeach; ?>
-                            </small>
-                        </article>
-                    </div>
-
-                <?php endwhile; ?>
-            </div>
-            <?php if (paginate_links()): ?>
-                <div class="text-center">
-                    <div id="post-pagination" style="display: none">
-                        <?php  echo paginate_links(); ?>
-                    </div>
-                    <div class="wp-block-button">
-                        <a class="wp-block-button__link" href="javascript:;" id="loadMorePosts">SEE MORE</a>
-                    </div>
-                </div>
-            <?php endif ?>
-            
-        </div>     
-    </section>
-
-<?php get_footer() ?>
+							if($custom_query->have_posts()) :
+								while($custom_query->have_posts()) : $custom_query->the_post();
+							$counter++;
+							if($counter % 2){
+					?>
+						<div class='post-item post-item-left'>
+							<div class="post-inner">
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<p><?php echo excerpt(20); ?><br /><br /><a class="button small" href="<?php the_permalink(); ?>"><span>Read More</span></a></p>
+							</div>
+						</div>
+					<?php } else {?>
+						<div class='post-item post-item-right'>
+								<div class="post-inner">
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<p><?php echo excerpt(20); ?><br /><br /><a class="button small" href="<?php the_permalink(); ?>"><span>Read More</span></a></p>
+							</div>
+						</div>
+					<?php } endwhile; ?>
+				</div>
+				<?php 
+				
+					custom_pagination($custom_query->max_num_pages,"",$paged);
+					wp_reset_postdata();
+						
+					endif; 
+				?>
+			</div>
+		</div>
+	</div>
+</div>
+<?php get_footer();?>

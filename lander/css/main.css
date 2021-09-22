@@ -311,6 +311,33 @@ textarea[rows="9"] {
 }
 
 
+.hero_form #gform_6 {   
+	position:relative;        
+}
+
+.hero_form #gform_6 .gfield {
+    
+	float: left;
+	width: 49%;
+}
+
+.hero_form #gform_6 .message_field {
+	float: right;
+	position: absolute;
+	right: 0;
+}
+
+.hero_form #gform_6 .gform_footer {
+	float: right;
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+}
+
+.gform_wrapper .ginput_complex label, .gform_wrapper .ginput_complex legend {
+	display: block;
+}
+
 /* Buttons 
 -------------------------------------------*/
 .button {

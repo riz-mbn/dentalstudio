@@ -34,7 +34,7 @@
 			<div class="cell large-6 col-copy align-self-middle">
 				<h3 class="col-title">Dr. Megan Peterson Boyle</h3>
 				<div class="team_position"><h4>Owner</h4></div>
-				<p>Doctorate in Dental Medicine form Midwestern University</p>
+				<p>Doctorate in Dental Medicine from Midwestern University</p>
 				<p>Specializes in General Dentistry for the whole family including:</p>
 				<div class="services_cols">
 					<div class="services_col">
@@ -55,7 +55,7 @@
 				</div>
 				<div class="btn_group">
 					<div class="button primary medium"><a href="<?php echo home_url() ?>/contact-us">Request An Appointment</a></div>
-					<div class="button small"><a href="<?php echo home_url() ?>/dr-megan-peterson-boyle" class="">Meet Dr. Peterson Boyle</a></div>
+					<div class="button small"><a href="<?php echo home_url() ?>/cosmetic-dentists/dr-megan-peterson-boyle" class=""><span>Meet Dr. Peterson Boyle</span></a></div>
 				</div>	
 				<div class="logo_group">			
 					<figure class="img_request">
@@ -80,7 +80,7 @@
 				</figure>
 			</div>				
 			<div class="cell large-6 col-copy large-order-1 align-self-middle">
-				<h3 class="col-title">Dr. Robert Koch <span class="subtitle">(Cook)</span></h3>
+				<h3 class="col-title">Dr. Robert Koch <span class="">(Cook)</span></h3>
 				<p>Masters in BioMedical Science & Doctorate in Dental Medicine from Midwestern University.</p>
 				<p>Specializes in General Dentistry for the whole family including:</p>
 				<div class="services_cols">
@@ -93,7 +93,7 @@
 					</div>
 					<div class="services_col">
 						<ul class="list">
-							<li><h4>Root Canal</h4></li>
+							<li><h4>Root Canals</h4></li>
 							<li><h4>Pediatric Dentistry</h4></li>
 							<li><h4>& More!</h4></li>
 						</ul>
@@ -101,7 +101,7 @@
 				</div>
 				<div class="btn_group">
 					<div class="button primary medium"><a href="<?php echo home_url() ?>/contact-us">Request An Appointment</a></div>
-					<div class="button small"><a href="<?php echo home_url() ?>/dr-robert-koch/" class="">Meet Dr. Robert Koch</a></div>
+					<div class="button small"><a href="<?php echo home_url() ?>/cosmetic-dentists/dr-robert-koch/" class=""><span>Meet Dr. Robert Koch</span></a></div>
 				</div>	
 				<div class="logo_group">			
 					<figure class="img_request">
@@ -122,7 +122,7 @@
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x cols2-s4">
 			<div class="cell large-7 large-order-2 align-self-middle ">
-				<figure class="col-image"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental_2.jpg" alt="" width="810" height="474" />
+				<figure class="col-image"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_why_dental_4.jpg" alt="" width="1006" height="737" />
 			</div>
 			<div class="cell large-5 large-order-1 align-self-middle col-copy">
 				<div class="section_title_wrap">

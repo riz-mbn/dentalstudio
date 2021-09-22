@@ -45,8 +45,8 @@
                 </div>
             </div>
             <div class="footbot">
-                <div class="copyright">Company. ALL Rights Reserved.  &copy;  <?php echo date('Y'); ?> - Dental Studio 101 </div>
-                <div class="designby"><a href="https://www.mybizniche.com/phoenix-web-design/" target="_blank">Website Design</a> by: My Biz Niche</div>
+                <div class="copyright">All rights reserved.  &copy;  <?php echo date('Y'); ?> - Dental Studio 101 </div>
+                <div class="designby"><a href="https://www.mybizniche.com/phoenix-web-design/" target="_blank">Website</a> by: My Biz Niche</div>
             </div>
         </div>  
     </footer>

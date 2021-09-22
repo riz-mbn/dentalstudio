@@ -1,14 +1,14 @@
 <?php /*Template Name: Studio Awards*/ get_header('inner'); ?>
-<div id=studio>
-	<div class=block1>
-		<div class=row>
+<section id="studio">
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-12 columns ttl'>
 				<h1>Awards</h1>
 			</div>
 		</div>
 	</div>
-	<div class=block2>
-		<div class=row>
+	<div class="grid-container block2">
+		<div class=grid-x>
 			<div class='large-8 columns left'>
 				<h3>Award Winning Care, Cutting Edge Studio</h3>
 				<p>
@@ -16,7 +16,7 @@
 					has to offer. <a style="color: #993300;" href="https://www.dentalstudio101.com/cosmetic-dentists/dr-megan-peterson-boyle/">Dr. Megan Peterson Boyle</a> and <a style="color: #993300;" href="https://www.dentalstudio101.com/cosmetic-dentists/dr-mark-peck/">Dr. Mark Peck</a> are well recognized by their peers, patients and 
 					the dental industry for their professionalism and knowledge.
 				</p>
-				<div class='row cont'>
+				<div class='grid-x cont'>
 					<div class='large-4 columns'>
 						<img src='<?php bloginfo('template_url');?>/img/studio-awards-dr.megan-peterson-boyle.jpg' alt='Dental Studio 101 - Dr. Megan Peterson Boyle' />
 					</div>
@@ -32,7 +32,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class='row cont'>
+				<div class='grid-x cont'>
 					<div class='large-4 columns'>
 						<img src='<?php bloginfo('template_url');?>/img/studio-awards-dr.mark-peck.jpg' alt='Dental Studio 101 - Dr. Mark Peck' />
 					</div>
@@ -61,7 +61,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row">
+		<div class="grid-x">
 			<div class='large-12 columns'>
 				<p>
 					Both Dr. Peterson Boyle and Dr. Peck are committed to carrying out the Dental Studio 101 philosophy each 
@@ -73,5 +73,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <?php get_footer();?>

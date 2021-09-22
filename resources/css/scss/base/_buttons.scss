@@ -62,7 +62,7 @@
 
         &:hover {
             color: $color-white;
-            background: lighten($color-primary, 10%);
+            background: #e5cfb4!important;
 
             a {            
                 color: $color-white;
@@ -354,7 +354,8 @@
         text-transform: uppercase;
         
         @include media(max-width, 1023px) {
-            padding: 15px ​40px;
+            padding: 20px 30px;
+            font-size: 16px;
         }
     }
 

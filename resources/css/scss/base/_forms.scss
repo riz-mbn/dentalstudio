@@ -336,9 +336,130 @@ ul.gform_fields  {
         }
     }
 }
+.spacer.gfield {
+    display: none;
+}
+.footer-info .btn-phone {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+}
+.hero-form {
+    #gform_wrapper_6 {
 
+        .gform_submission_error {
+            font-size: 18px;
+            color: $color-white;
+        }
+            
+        #gform_6 {
+            position:relative;
+
+            .validation_message {
+                color: $color-white;
+            }
+
+            .gfield {
+        
+                float: left;
+                width: 49%;
+                margin-bottom: 0;
+
+                label,
+                legend {
+                    display: block;
+                    font-size:14px;
+                }
+                textarea.medium {
+                    height: 200px !important;
+                }
+
+                &.btn_cta_call {
+                    width: 100%!important;
+                    float: right !important;
+                    position: absolute;
+                    bottom: 40px;
+
+                    .btn-phone {
+                        font-weight: 500;
+                        font-size: 25px;
+                        color: #fff;
+                        float: right;
+                        margin: 8px 30px 0 0;
+                    }
+                }
+
+            }
+
+            .message_field {
+                float: right;
+                position: absolute;
+                right: 0;
+            }
+
+            .gform_footer {
+                
+            }
+
+            .ginput_complex {
+                label,
+                legend {
+                    display: block;
+                    font-size:14px;
+                }
+            }
+
+            @include media (max-width, 1023px){
+
+                .gfield {
+                    float: none;
+                    width: 100%;
+                    margin-bottom: 0;
+    
+                    
+                    .ginput_complex {
+                        display: flex;
+                    }        
+
+                }
+                .message_field {
+                    float: none;
+                    position: unset;
+                }
+    
+
+            }
+
+        }
+
+    }
+}
 
 .gform_wrapper {
+  
+    #gform_4 {
+        position:relative;
+        .gfield {
+    
+            float: left;
+            width: 49%;
+        }
+
+        .message_field {
+            float: right;
+            position: absolute;
+            right: 0;
+        }
+
+        .gform_footer {
+            float: right;
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+        }
+    }
     
     .gform_fields {
         width: 100%;
@@ -346,15 +467,54 @@ ul.gform_fields  {
         display: grid;
         grid-template-columns: repeat(12,1fr);
         grid-template-rows: repeat(auto-fill,auto);
-        grid-column-gap: 2%;
-        grid-row-gap: 16px;
 
         .gfield {
+    
             grid-column: 1/-1;
+
             &.gfield--width-half{
                 grid-column: span 6;
-            }
 
+                &.gfield_email {                                    
+                    padding-right: 2%!important;
+                }
+                &.gfield_phone {                                    
+                    padding-right: 2% !important;
+                }
+            }
+        }
+        
+        @include media(max-width, 1023px){
+            .gfield {
+                &.gfield--width-half{
+                    grid-column: 1/-1 ;
+                
+                    &.gfield_email {                                    
+                        padding-right: 0!important;
+                    }
+                    &.gfield_phone {                                    
+                        padding-right: 0!important;
+                    }
+                }
+            }
+        }
+        @include media(max-width, 480px){
+
+            fieldset {
+            
+                &.gfield {
+                    margin-bottom: 0;
+    
+                    .ginput_complex {
+                        flex-direction: column;
+                        span {                  
+                            padding-right: 0;     
+                            margin-bottom: 14px;
+                        }
+                    }
+                }
+
+            }
         }
     }
     
@@ -394,6 +554,15 @@ ul.gform_fields  {
         }
         
 
+        @include media (min-width, 1023px){
+            .gform_fields {
+                    
+                display: block;
+                grid-template-columns: repeat(12,1fr);
+                grid-template-rows: repeat(auto-fill,auto);
+            }
+        }
+
         @include media (min-width, 641px){
 
             &:not(.ginput_container_address) {
@@ -426,6 +595,34 @@ ul.gform_fields  {
             }
 
         }
+    }
+
+    @include media (max-width, 768px){
+
+        .gform_footer {
+            float: none;
+            position: unset;
+
+            .button {
+                width: 100%;
+            }
+        }
+    
+        .gform_fields {
+    
+            .gfield {
+        
+                float: none;
+                width: 100%;
+            }
+    
+            .message_field {
+                float: none;
+                position: unset;
+            }
+        }
+    
+        
     }
 
 }

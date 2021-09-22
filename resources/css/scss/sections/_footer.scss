@@ -8,6 +8,10 @@
 
     * {
         color: $body-color;
+        font-size: 20px;
+        @include media(max-width, 480px){
+            font-size: 16px!important;
+        }
     }
 
     a {
@@ -26,13 +30,11 @@
         }
             
         &.meet_founder {
-            font-size: 20px;
             border-top: 1px solid #d1c0ac;
             border-bottom: 1px solid #d1c0ac;
             color: $color-grey;
 
-            &:hover,
-            strong {
+            &:hover{
                 color: $color-primary;
             }
         }
@@ -54,7 +56,9 @@
             font-size: 20px;
             line-height: 1.6;
             margin-bottom: 0;
-
+            @include media(max-width, 480px){
+                font-size: 16px;
+            }
         }
     }
 
@@ -136,6 +140,9 @@
         .copyright,
         .designby {
             font-size: 15px;
+            a {
+                font-size: 15px;
+            }
         }
     }
     .follow_us {
@@ -208,6 +215,15 @@
         .foot_contact {
             max-width: none;
             margin-bottom: 10px;
+        }
+
+            
+        .footer_menu {
+            .menu {
+                li.menu-item {
+                    padding-bottom: 10px;
+                }
+            }
         }
 
         .follow_us {

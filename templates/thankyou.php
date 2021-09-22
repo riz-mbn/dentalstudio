@@ -71,15 +71,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <?php include_once('menu.php');?>
 <div id=single>
-	<div class=block1>
-		<div class=row>
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-12 columns ttl'>
 				<h1><?php the_title(); ?></h1>
 			</div>
 		</div>
 	</div>
-	<div class=block2>
-		<div class=row>
+	<div class="grid-container block2">
+		<div class=grid-x>
 			<div class='large-12 columns'>
 			<?php
 				if(have_posts()) : while (have_posts()) : the_post();

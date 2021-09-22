@@ -1,7 +1,7 @@
 <?php /*Template Name: Staff*/ get_header('inner'); ?>
-<div id=staff>
-	<div class=block1>
-		<div class=row>
+<section id=staff>
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-4 columns'>
 				<?php 
                     $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
@@ -23,5 +23,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <?php get_footer();?>

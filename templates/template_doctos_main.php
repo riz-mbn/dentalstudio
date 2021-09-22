@@ -1,14 +1,14 @@
 <?php /*Template Name: Doctors Main*/ get_header('inner'); ?>
 <div id=doctors_main>
-	<div class=block1>
-		<div class=row>
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-12 columns'>
 				<h1>Cosmetic Dentists in Scottsdale</h1>
 			</div>
 		</div>
 	</div>
-	<div class=block2>
-		<div class=row>
+	<div class="grid-container block2">
+		<div class=grid-x>
 			<div class='large-6 medium-6 columns text-center'>
 				<img src='<?php bloginfo('template_url');?>/img/Dr-Megan-Peterson-Boyle.jpg' alt='Dental Studio 101 - Dr. Megan Peterson Boyle' />
 				<h2>Dr. Megan Peterson Boyle</h2>

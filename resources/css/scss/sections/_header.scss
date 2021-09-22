@@ -262,14 +262,6 @@ header {
 							right: 20px;
 							margin-top: -6px;
 						}
-
-						@include media(max-width,1023px) {
-							padding-right: 20px;
-
-							&:after {
-								right: 0;
-							}
-						}
 					}
 				}
 
@@ -302,6 +294,44 @@ header {
 						font-weight: bold;
 					}
 				}
+
+				
+
+				@include media(max-width,1023px) {
+					.is-dropdown-submenu-parent {
+						> a {
+							padding-right: 20px;
+
+							&:after {
+								right: 0;
+							}
+						}
+					}
+				}
+				@include media(max-width,1045px) {
+					
+					a {
+						padding: 0 5px !important
+					}
+
+				}
+
+				@include media(max-width,1440px) {
+					a {
+						padding: 0 10px;
+					}
+
+					.is-dropdown-submenu-parent {
+						> a {
+							padding-right: 30px;
+
+							&:after {
+								right: 10px;
+							}
+						}
+					}
+				}
+
 			}
 
 
@@ -350,8 +380,34 @@ header {
 									filter: brightness(0%);
 							}
 						}
+
+						
 					}
 				}
+				
+				@include media(max-width,1229px) {					
+
+					a {
+						font-size: 18px;
+
+						.subtext {
+							font-size: 9px;
+						}
+					}
+						
+					.icon_blurb {
+						.icon_img {
+							
+							&.icn_phone {
+								width: 20px;
+								height: 20px;
+								
+							}
+						}
+					}
+
+				}
+
 			}
 			
 			.navicon {
@@ -416,8 +472,6 @@ header {
 				}
 				
 				.logo, .navlogo {
-					margin-left: 10px;
-
 					figure {
 						width: 150px;
 					}

@@ -494,7 +494,7 @@
             .sec_request {
 
                 .cta_link {
-                    display: block;
+                    display: inline;
                 }
 
                 .gform_footer {
@@ -518,7 +518,7 @@
             }
             
             .sec_request {
-                padding: 50px 0;
+                padding: 0;
                 .col-image {
                    .img_request {
                        display: none;
@@ -535,8 +535,19 @@
                 .col-content {
                     padding-left: 0;
                     
-                    .tabs-panel .content .col-image {
-                        margin-right: 0;
+                    .tabs-panel {
+                        .content{
+                            .col-image {
+                                margin-right: 0;
+                            }
+                            h3 {
+                                font-size: 30px;
+
+                            }
+                            p{
+                                font-size: 16px;
+                            }
+                        }
                     }
                 }
 
@@ -600,6 +611,11 @@
                         p {
                             color: $color-grey;
                         }
+                    }
+                }
+                figure {
+                    .bg {
+                        position: unset;
                     }
                 }
             }

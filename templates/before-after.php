@@ -32,7 +32,7 @@
                     </div>
                     <div class="img_caption">
                         <span>Before</span>
-                        <span>Patient #1</span>
+                        <span class="patient">Patient #1</span>
                         <span>After</span>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     </div>                        	
                     <div class="img_caption">
                         <span>Before</span>
-                        <span>Patient #1</span>
+                        <span class="patient">Patient #2</span>
                         <span>After</span>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     </div>
                     <div class="img_caption">
                         <span>Before</span>
-                        <span>Patient #1</span>
+                        <span class="patient">Patient #3</span>
                         <span>After</span>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="img_caption">
                         <span>Before</span>
-                        <span>Patient #1</span>
+                        <span class="patient">Patient #4</span>
                         <span>After</span>
                     </div>
                 </div>
@@ -121,9 +121,8 @@
             </div>        
         </div>
     </section>
-    <section class="section_cta text-center">
+    <section class="section_cta with_separator text-center">
         <div class="grid-container">
-            <div class="separator"></div>
             <a href="<?php echo home_url() ?>/contact-us" class="button primary large">Schedule an Appointment</a>
         </div>
     </section>
@@ -132,12 +131,10 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-12 col-copy">
-                    <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_grp_2.jpg" alt="" width="1410" height="728" /></figure>
-                    <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_gallery_mob_2.jpg" alt="" width="984" height="844" /></figure>
                     <div class="section_title_wrap">
-                        <h1>Smile</h1>
-                        <h1>Board</h1>
+                        <h1>Smile <span>Board</span></h1>
                     </div>
+                    <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/smile-board.jpg" alt="" width="1410" height="728" /></figure>
                 </div>
             </div>
         </div>

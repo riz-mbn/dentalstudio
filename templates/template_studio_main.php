@@ -1,20 +1,20 @@
 <?php /*Template Name: Studio Main*/ get_header('inner'); ?>
-<div id="studio_main">
+<section id="studio_main">
 	<div class="grid-container">
-		<div class="block1">
-			<div class="row">
-				<div class="large-12 columns ttl">
+		<div class="grid-container block1">
+			<div class="grid-x">
+				<div class="large-12 ttl">
 					<h1>Studio</h1>
 				</div>
 			</div>
 		</div>
 		<div class="separator"></div>
-		<div class="block2">
-			<div class="row">
-				<div class="large-4 columns left">
+		<div class="grid-container block2">
+			<div class="grid-x">
+				<div class="large-4 left">
 					<img src="<?php bloginfo('template_url');?>/img/studio-main-img1.jpg" alt="cosmetic dentistry studio in scottsdale" width="369" height="273" />
 				</div>
-				<div class="large-8 columns right">
+				<div class="large-8 right">
 					<h3>About our Studio</h3>
 					<?php /*
 					<p>
@@ -30,7 +30,7 @@
 					<a href='<?php echo home_url() ?>/about-our-studio/' class="button small"><span>LEARN MORE</span></a>
 				</div>
 			</div>
-			<div class="row">
+			<div class="grid-x">
 				<div class='large-4 columns left'>
 					<img src='<?php bloginfo('template_url');?>/img/studio-main-img2.jpg' alt='scottsdale cosmetic dentistry studio' width="369" height="273" />
 				</div>
@@ -45,7 +45,7 @@
 					<a href='<?php echo home_url() ?>/studio-gallery/' class="button small"><span>LEARN MORE</span></a>
 				</div>
 			</div>
-			<div class="row">
+			<div class="grid-x">
 				<div class='large-4 columns left'>
 					<img src='<?php bloginfo('template_url');?>/img/studio-main-img3.jpg' alt='our beautiful cosmetic dentistry studio' width="369" height="273" />
 				</div>
@@ -61,7 +61,7 @@
 				</div>
 			</div>
 			<?php /*
-			<div class=row>
+			<div class=grid-x>
 				<div class='large-4 columns left'>
 					<img src='<?php bloginfo('template_url');?>/img/studio-main-img3.jpg' alt='Dental Studio 101 - Referral Program' />
 				</div>
@@ -78,5 +78,5 @@
 			*/ ?>
 		</div>
 	</div>
-</div>
+</section>
 <?php get_footer();?>

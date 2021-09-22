@@ -8,7 +8,7 @@
         <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/hero-banner-mob.jpg" alt="" width="1155" height="612"></figure>
         <div class="hero-caption">
             <div class="grid-container"> 
-                <div class="grid-x grid-margin-x">
+                <div class="grid-x">
                     <div class="cell large-5 align-self-middle small-order-2 large-order-1">
                         <figure class=""><img src="<?php echo MBN_ASSETS_URI ?>/img/logo-med.svg" alt="" width="501" height="136"></figure>
                         <div class="text_wrap">
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <?= do_shortcode('[mbn_services_tab]')  ?>
+        <?= do_shortcode('[mbn_services_tab exclude_ids="6187, 6186, 6185, 6183"]')  ?>
     </section>
     <section class="sec_inquiry">
         <div class="grid-container">
@@ -157,13 +157,11 @@
         <div class="grid-container">
             <div class="grid-x grid-margin-x">
                 <div class="cell large-12 col-copy">
-                    <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_grp_2.jpg" alt="" width="1410" height="728" /></figure>
-                    <figure class="hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_gallery_mob_2.jpg" alt="" width="984" height="844" /></figure>
                     <div class="section_title_wrap">
-                        <h1>Smile</h1>
-                        <h1>Gallery</h1>
-                        <a href="#" class="button small"><span>View More</span></a>
+                        <h1>Smile <span>Gallery</span></h1>
+                        <a href="<?php echo home_url()?>/before-after" class="button small"><span>View More</span></a>
                     </div>
+                    <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_grp_2.jpg" alt="" width="1410" height="728" /></figure>
                 </div>
             </div>
         </div>

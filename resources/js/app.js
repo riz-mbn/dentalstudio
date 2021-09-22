@@ -105,8 +105,9 @@
                     speed: 300,
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    variableWidth: true,
+                    variableWidth: false,
                     focusOnSelect: true,
+                    asNavfor: '.services-content',
                     responsive: [
                         {
                             breakpoint: 1024,

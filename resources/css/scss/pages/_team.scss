@@ -18,7 +18,6 @@
 
 	.section_title {
 
-		margin-bottom: 80px;
 
 		h2 {
 			color: $color-primary;
@@ -28,10 +27,15 @@
 	
 	.col-copy {
 		.col-title {
-			color: $color-black;
+			color: $color-secondary;
 
 			.subtitle {
 				font-weight: 400;
+			}
+
+			span {
+				font-size: 26px;
+				font-weight: 600;
 			}
 		}
 
@@ -104,11 +108,12 @@
 
 		.col-copy {
 			padding: 60px 0 0;
+			color: $color-grey;
 		}
 
 		.col-image {
-			margin-right: calc((-100vw - -1335px) / 2);
-			margin-left: 15px;
+			margin-right: calc((-100vw - -1425px)/2);
+			margin-left: 64px;
 		}
 	}
 	.section_title_wrap {
@@ -118,7 +123,7 @@
 		}
 
 		h4.section_title {
-			color: $color-black;
+			color: $color-secondary;
 			
 			&:after {
 				content: url(../img/icon/icn-title-grev.svg);

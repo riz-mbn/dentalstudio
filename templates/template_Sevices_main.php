@@ -1,14 +1,14 @@
 <?php /*Template Name: Services Main*/ get_header('inner'); ?>
-<div id=studio_main>
-	<div class=block1>
-		<div class=row>
+<section id=studio_main>
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-12 columns ttl'>
 				<h1>Dental Services Scottsdale</h1>
 			</div>
 		</div>
 	</div>
-	<div class=block2>
-		<div class=row>
+	<div class="grid-container block2">
+		<div class=grid-x>
 			<div class='large-4 columns left'>
 				<img src='<?php bloginfo('template_url');?>/img/cosmetic-dentistry-services.jpg' alt='Cosmetic Dentistry in Scottsdale AZ' />
 			</div>
@@ -23,7 +23,7 @@
 				<a href='https://www.dentalstudio101.com/cosmetic-dentistry/' class=btn5>LEARN MORE</a>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-4 columns left'>
 				<img src='<?php bloginfo('template_url');?>/img/invisalign-braces-dental-services.jpg' alt='Invisalign Clear Braces in Scottsdale AZ' />
 			</div>
@@ -36,7 +36,7 @@
 				<a href='/invisalign-scottsdale/' class=btn5>LEARN MORE</a>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-4 columns left'>
 				<img src='<?php bloginfo('template_url');?>/img/porcelain-veneers-dental-services.jpg' alt='Porcelain Veneers in Scottsdale AZ' />
 			</div>
@@ -49,7 +49,7 @@
 				<a href='/porcelain-veneers-scottsdale/' class=btn5>LEARN MORE</a>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-4 columns left'>
 				<img src='<?php bloginfo('template_url');?>/img/dental-implants-dental-services.jpg' alt='Dental Implants in Scottsdale AZ' />
 			</div>
@@ -62,21 +62,21 @@
 				<a href='/dental-implants-scottsdale/' class=btn5>LEARN MORE</a>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-4 columns left'>
-				<img src='<?php bloginfo('template_url');?>/img/dental-crowns-services.jpg' alt='Dental Crowns in Scottsdale AZ' />
+				<img src='<?php bloginfo('template_url');?>/img/dental-cgrid-xns-services.jpg' alt='Dental Cgrid-xns in Scottsdale AZ' />
 			</div>
 			<div class='large-8 columns right'>
-				<h2>Dental Crowns</h2>
+				<h2>Dental Cgrid-xns</h2>
 				<p>
-					Imagine for a moment a brand new tooth that looks just like your natural tooth should look. With dental crowns you can have the natural look of healthy 
-					teeth instead of damaged or stained teeth. Dental crowns have been used for years by dentists to improve their patients’ natural smiles and advances in 
-					the technology that developed dental crowns has further enhanced the look and feel of today’s dental crowns.
+					Imagine for a moment a brand new tooth that looks just like your natural tooth should look. With dental cgrid-xns you can have the natural look of healthy 
+					teeth instead of damaged or stained teeth. Dental cgrid-xns have been used for years by dentists to improve their patients’ natural smiles and advances in 
+					the technology that developed dental cgrid-xns has further enhanced the look and feel of today’s dental cgrid-xns.
 				</p>
-				<a href='/dental-crowns-scottsdale/' class=btn5>LEARN MORE</a>
+				<a href='/dental-cgrid-xns-scottsdale/' class=btn5>LEARN MORE</a>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-4 columns left'>
 				<img src='<?php bloginfo('template_url');?>/img/cosmetic-fillings-dental-services.jpg' alt='Cosmetic Fillings in Scottsdale AZ' />
 			</div>
@@ -90,7 +90,7 @@
 				<a href='/composite-fillings-scottsdale/' class=btn5>LEARN MORE</a>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-4 columns left'>
 				<img src='<?php bloginfo('template_url');?>/img/esthetic-rehabilitation-dental-services.jpg' alt='Esthetic Rehabilitation in Scottsdale AZ' />
 			</div>
@@ -105,12 +105,12 @@
 			</div>
 		</div>
 	</div>
-    <div class="block-cta">
-		<div class="row">
+    <div class="grid-container block-cta">
+		<div class="grid-x">
 			<div class="large-12 columns text-center"> 
 				<a class="btn3 btn-custom" href="" target="_blank">Request Your Free Virtual Consult</a>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <?php get_footer();?>

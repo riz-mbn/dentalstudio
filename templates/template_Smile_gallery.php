@@ -1,20 +1,20 @@
 <?php /*Template Name: Smile Gallery*/ get_header('inner'); ?>
-<div id=smile_gallery>
-	<div class=block1>
-		<div class=row>
+<section id=smile_gallery>
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-12 columns'>
 				<h1>How Long Will Veneers Last?</h1>
 			</div>
 		</div>
 	</div>
-	<div class=block2>
-		<div class=row>
+	<div class="grid-container block2">
+		<div class=grid-x>
 			<div class='large-12 columns'>
 				<p>
 					At Dental Studio 101 we do many smile makeover veneer cases. Unfortunately, we are faced with replacing other lab & doctor cases that are only 3 – 5 years old. 
 					One of our most common questions is how long will veneers last? Our oldest standing case is nearing 30 years.
 				</p>
-				<div class='row smile-list'>
+				<div class='grid-x smile-list'>
 				<?php 
 					query_posts('post_type=smilegallery&orderby=date&order=DESC&posts_per_page=-1');
 					while(have_posts()) : the_post();
@@ -28,5 +28,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <?php get_footer();?>

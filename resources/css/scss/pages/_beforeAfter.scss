@@ -2,19 +2,37 @@
     color: $color-black;
     padding: 84px 0 114px;
     
-    .highlight {
-        color: $color-primary;
+    h1 {        
+        color: $color-black;
+        .highlight {
+            color: $color-primary;
+        }
     }
 }
 
 .section_patient {
     background-image: linear-gradient(to top, rgba(244, 228, 212, 0), #f4e4d4);
 
+    h4 {
+        color: $color-secondary;
+    }
+
     .img_caption {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 65px;
+        align-items: center;
+
+        .patient {
+            font-size: 22px;
+            color: $color-grey;
+            font-weight: 600;
+        }
+    }
+
+    .ba-item {
+        width: 100%;
     }
 
     .cols2-s4 {
@@ -23,14 +41,28 @@
             
             .col-image {
                 margin-right: calc((-100vw - -1440px) / 2);
-                margin-left: -30px;
-            }
+                padding-right: 90px;
+                padding-left: 80px;
+                margin-left: 0;
 
+                .ba-item {
+                    width: 84%;
+                }
+            }
+            .img_caption {
+                padding-left: 80px;
+            }
+            
+        }
+
+        .img_caption {
+            padding-right: 80px;
         }
             
         .col-image {
             margin-right: 0;
             margin-bottom: 20px;
+            padding-right: 80px;
         }
 
         .large-order-1 {
@@ -46,6 +78,76 @@
         }
 
     }
+
+    @include media(min-width, 1921px){
+        .cols2-s4 {
+            .large-order-2 {
+                
+                .col-image {
+                    padding: 0;
+                    margin:0;
+                    .ba-item {
+                        width: 100%;
+                    }
+                } 
+                .img_caption {
+                    padding-left: 0;
+                }
+            }
+
+            .col-image {
+                padding: 0;
+                margin:0;
+            }
+                
+            .img_caption {
+                padding-right: 0;
+            }
+            
+            .large-order-1.col-copy {
+                            
+                padding-left: 0;
+            }
+            .col-copy {
+                padding-right: 0;
+            }
+        }
+    }
+
+    @include media(max-width, 1024px){
+                
+        .cols2-s4 {
+            .col-copy {
+                padding-right: 0 !important;
+            }
+        }
+    }
+    
+    @include media(max-width, 1023px){
+                
+        .cols2-s4 {
+            .large-order-2 {
+                
+                .col-image {
+    
+                    .ba-item {
+                        width: 100%;
+                    }
+                }
+                .img_caption {
+                    padding-left: 0;
+                }
+            }
+            .img_caption {
+                padding-right: 0;
+            }
+
+            .large-order-1.col-copy {
+                            
+                padding-left: 0;
+            }
+        }
+    }
 }
 
 .before_after {
@@ -56,6 +158,20 @@
             letter-spacing: -3.11px;
         }
 
+        .sec_gallery {
+            font-size: 94px;
+        }
+
+
+        @include media(max-width, 1024px){
+                    
+            margin-bottom: 15px;
+
+           h1{
+               line-height: 1;
+                margin-bottom: 0;
+            }
+        }
     }
 
     .sec_gallery {       
@@ -72,6 +188,33 @@
                 left: -30px;
                 top: -45px;
                 z-index: -1;
+            }
+
+            h1 {
+                
+                line-height: 0.8 !important;
+
+                span {
+                    
+                    display: block;
+
+                }
+            }
+
+            
+            @include media(max-width, 1023px){
+                .section_title_wrap {
+                    align-items: center;
+                    h1 {
+                        padding-bottom: 20px;
+                        text-align: center;
+                        span {
+                            display: inline;
+        
+                        }
+                    }
+
+                }
             }
 
         }

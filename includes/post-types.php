@@ -10,12 +10,16 @@ function testimonials_post() {
                 'singular_name' => __('Testimonial')
             ),
             'public'        => true,
+            'publicly_queryable'  => false,
             'has_archive'   => false,
             'show_in_rest'  => false,
             'menu_position' => 20,
-            'with_front' => true,
             'supports'      =>  array('title', 'editor', 'page-attributes', 'thumbnail'),
             'menu_icon'     => 'dashicons-format-quote',
+            'rewrite' => array(
+                'slug' => 'testimonials_type',
+                'with_front' => false  
+            )
         )
     );
 
@@ -31,7 +35,7 @@ function testimonials_post() {
             'show_in_rest' => true,
             'rewrite' => array(
                 'slug' => 'testimonial_cats',
-                'with_front' => true  
+                'with_front' => false  
             )
         )
     );
@@ -50,10 +54,15 @@ function services_post() {
             'public'        => true,
             'has_archive'   => false,
             'show_in_rest'  => false,
+            'publicly_queryable'  => false,
+            'show_in_nav_menus' => true,
             'menu_position' => 20,
-            'with_front' => true,
             'supports'      =>  array('title', 'editor', 'page-attributes', 'thumbnail'),
             'menu_icon'     => 'dashicons-store',
+            'rewrite' => array(
+                'slug' => 'services_type',
+                'with_front' => false  
+            )
         )
     );
 
@@ -69,7 +78,7 @@ function services_post() {
             'show_in_rest' => true,
             'rewrite' => array(
                 'slug' => 'service_cats',
-                'with_front' => true  
+                'with_front' => false  
             )
         )
     );

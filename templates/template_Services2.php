@@ -1,14 +1,14 @@
 <?php /*Template Name: Services2*/ get_header('inner'); ?>
-<div id=services>
-	<div class=block1>
-		<div class=row>
+<section id=services>
+	<div class="grid-container block1">
+		<div class=grid-x>
 			<div class='large-12 columns ttl'>
 				<h1><?php the_title();?></h1>
 			</div>
 		</div>
 	</div>
-	<div class=block2>
-		<div class=row>
+	<div class="grid-container block2">
+		<div class=grid-x>
 			<div class='large-12 columns'>
 			<?php
 				if(have_posts()) :
@@ -19,15 +19,15 @@
 			?>
 			</div>
 		</div>
-		<div class=row>
+		<div class=grid-x>
 			<div class='large-12 columns cont2'>
-				<div class=row>
+				<div class=grid-x>
 					<div class='large-6 columns txt'>
 						<h2>Teeth Whitening And Stains</h2>
 						<p>
 							Stains from everyday foods and beverages can quickly dull your beautiful pearly whites. Teeth whitening 
 							is a procedure that restores the natural whiteness, removing unwanted stains and fading. For those with 
-							more serious stains or those who are sensitive to teeth whitening solutions, veneers or crowns area procedures 
+							more serious stains or those who are sensitive to teeth whitening solutions, veneers or cgrid-xns area procedures 
 							that can effectively accomplish the same goal.
 						</p>
 						<p>
@@ -51,7 +51,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <?php 
 include_once('services-form.php');
 get_footer();
