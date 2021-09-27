@@ -49,7 +49,8 @@
         </div>
     </section>
     <section class="sec_google_review">
-        <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_review.jpg" alt="" width="1920" height="954" /></figure>
+        <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img_review.jpg" alt="" width="1920" height="954" /></figure>
+            <figure class="sec_logo hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_hallway_2.jpg" alt="" width="1200" height="555"/></figure>
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell large-7 col-copy">

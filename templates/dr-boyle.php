@@ -4,10 +4,11 @@
 get_header() ?>
 
 <section id="section_header_drboyle" class="section">
+    <figure class="bg show-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/dr-boyle-img.jpg" alt="" width="999" height="988"></figure>
     <div class="grid-container">
-        <div class="grid-x cols2-s4">
+        <div class="grid-x">
             <div class="cell large-7">
-                <figure class="col-image"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/dr-boyle-img.jpg" alt="" width="999" height="988"></figure>
+                <figure class="col-image hide-for-large"><img src="<?php echo MBN_ASSETS_URI ?>/img/dr-boyle-img.jpg" alt="" width="900" height="567"></figure>
                 <div class="section_title"><h1><em>"Welcome to </em><span><em>Dental Studio 101."</em></span></h1></div>
             </div>
             <div class="cell large-5 col-copy align-self-middle">
@@ -41,7 +42,7 @@ get_header() ?>
 
                 <p class="">Dr. Boyle is dedicated to delivering the best possible patient care. She is a leader in the field of cosmetic dentistry and full mouth rehabilitation in Scottsdale. She understands the anxiety related to dental care and has made it her goal to deliver treatment in a relaxing environment. Dr. Boyle believes tools such as sedation dentistry can greatly reduce anxiety in the dental environment and help the patient feel a greater degree of relaxation. Dr. Boyle strives to ensure every patient receives the time and attention they need. The time spent with each patient is the Dental Studio difference.</p>
 
-                <p class="">Dr. Boyle enjoys delivering <a href="<?php echo home_url()?>/cosmetic-dental-procedure/" ><strong>all aspects of general dentistry</strong></a> to the whole family, including tooth-colored fillings, veneers, bonding, crowns, bridges, dentures, oral surgery, dental implants, <a href="<?php echo home_url()?>/all-on-four-implants-scottsdale/"><strong>all-on-4 “teeth in a day” procedures</strong></a>, full mouth rehabilitation and treating TMJ pain.</p>
+                <p class="">Dr. Boyle enjoys delivering <a href="<?php echo home_url()?>/our-blog/cosmetic-dental-procedure/" ><strong>all aspects of general dentistry</strong></a> to the whole family, including tooth-colored fillings, veneers, bonding, crowns, bridges, dentures, oral surgery, dental implants, <a href="<?php echo home_url()?>/all-on-four-implants-scottsdale/"><strong>all-on-4 “teeth in a day” procedures</strong></a>, full mouth rehabilitation and treating TMJ pain.</p>
 
                 <p class="">Dr. Boyle is a member of the American Dental Association, the Arizona Dental Association, the American Academy of Implant Dentistry and Seattle Study Club. Dr. Boyle is a lifelong learner and is always pursuing further educational opportunities in her field. She enjoys taking continuing education in a variety of topics including cosmetic dentistry and TMJ disorders.</p>
 

@@ -96,7 +96,7 @@ function mbn_services_tab($atts) {
                         $active = ($cnt == 1) ? 'is-active' : '';
                     ?>
                         <div class="tabs-title <?php echo $active ?>" class=""><a href="#<?php echo $service->post_name; ?>" aria-selected="true">
-                            <?php if($icon): ?><span class="icon"><figure><img src="<?php echo esc_url($icon); ?>" alt="" width="40" height=""/></figure></span><?php endif; ?>
+                            <?php if($icon): ?><span class="icon"><figure><img src="<?php echo esc_url($icon); ?>" alt="" width="40" height="40"/></figure></span><?php endif; ?>
                             <span class="title"><?php echo $title; ?></span>
                         </a></div>
                     <?php
@@ -123,9 +123,9 @@ function mbn_services_tab($atts) {
                             <div class="col-image">
                                 <figure>
                                     <?php if($image[0]): ?>
-                                        <img src="<?php echo esc_url($image[0]); ?>" alt="" width="347" height="auto"/>
+                                        <img src="<?php echo esc_url($image[0]); ?>" alt="" width="347" height="423"/>
                                     <?php else : ?>
-                                        <img src="https://via.placeholder.com/347x423" alt="" width="347" height="auto"/>
+                                        <img src="https://via.placeholder.com/347x423" alt="" width="347" height="423"/>
                                     <?php endif; ?>
                             </figure>
                             </div>
@@ -174,11 +174,52 @@ function mbn_recent_posts(){
 }
 add_shortcode('mbn_recent_posts', 'mbn_recent_posts');
 
+function before_after_photos($atts){
+    
+    $count = count(get_field('before_after_slider'));
+    $style = '';
+
+    if ( $count > 1 ){        
+        $returnhtml .= '<div class="before_after_wrap" style="gap: 0.5em; display: flex; flex-direction: row; justify-content: center; margin-bottom: 20px; flex-wrap: wrap;">';
+        
+    }
+    else {
+        $returnhtml .= '<div class="before_after_wrap">';
+        $style = 'width: 50%;float: left;margin-right: 50px;';
+    }
+
+if( have_rows('before_after_slider') ):
+    while( have_rows('before_after_slider') ) : the_row();
+
+        $after = get_sub_field('before_photo');
+        $before = get_sub_field('after_photo');
+
+        $returnhtml .= '<div class="ba-item" style="'.$style .'">';
+        $returnhtml .= '<img alt="Image After" src="'. $after .'" />';
+        $returnhtml .= '<div class="resize">';
+        $returnhtml .= '<img alt="Image Before" src="'.$before .'" />';
+        $returnhtml .= '</div>';
+        $returnhtml .= '<span class="handle"></span>';
+        $returnhtml .= '</div>';
+
+    endwhile;
+    
+endif;
+
+$returnhtml .= '</div>';
+
+return $returnhtml;
+
+}
+
+add_shortcode('before_after_photos', 'before_after_photos');
+
 function before_after_slider($atts){
 
     $before = $atts['before'];
     $after = $atts['after'];
     $align = $atts['align'];
+    $columns = $atts['column'];
 
     if( $align == 'left' ) {
         $align = 'alignleft';
@@ -190,7 +231,14 @@ function before_after_slider($atts){
         $align = '';
     }
 
-    $returnhtml .= '<div class="ba-item '. $align .'">';
+    if($columns == 1) {
+        $style .= 'width: 50%;float: left;margin-right: 50px;';
+    }
+    else {
+        $style .= 'width: 45%;';
+    }
+
+    $returnhtml .= '<div class="ba-item '. $align .'" style="'.$style .'">';
     $returnhtml .= '<img alt="Image After" src="'. $after .'" />';
     $returnhtml .= '<div class="resize">';
     $returnhtml .= '<img alt="Image Before" src="'.$before .'" />';

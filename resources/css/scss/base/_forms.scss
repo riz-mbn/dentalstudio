@@ -600,8 +600,8 @@ ul.gform_fields  {
     @include media (max-width, 768px){
 
         .gform_footer {
-            float: none;
-            position: unset;
+            float: none !important;
+            position: unset !important;
 
             .button {
                 width: 100%;
@@ -612,16 +612,15 @@ ul.gform_fields  {
     
             .gfield {
         
-                float: none;
-                width: 100%;
+                float: none !important;
+                width: 100% !important;
             }
     
             .message_field {
-                float: none;
-                position: unset;
+                float: none !important;
+                position: unset !important;
             }
-        }
-    
+        }   
         
     }
 

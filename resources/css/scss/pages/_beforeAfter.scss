@@ -8,6 +8,18 @@
             color: $color-primary;
         }
     }
+
+    .col-copy {
+        color: $body-color;
+        padding-left: 45px;
+    }
+
+    @include media (max-width, 1023px) {
+            
+        .col-copy {
+            padding-left: 0;
+        }
+    }
 }
 
 .section_patient {
@@ -40,7 +52,7 @@
         .large-order-2 {
             
             .col-image {
-                margin-right: calc((-100vw - -1440px) / 2);
+                margin-right: calc((-100vw - -1380px) / 2);
                 padding-right: 90px;
                 padding-left: 80px;
                 margin-left: 0;
@@ -63,6 +75,11 @@
             margin-right: 0;
             margin-bottom: 20px;
             padding-right: 80px;
+            margin-left: calc((-100vw - -1380px)/2);
+
+            .ba-item {
+                height: 380px;
+            }
         }
 
         .large-order-1 {
@@ -75,6 +92,7 @@
         .col-copy {
             padding-right: 0;
             padding-left: 20px;
+            padding-top: 60px;
         }
 
     }
@@ -109,6 +127,7 @@
                 padding-left: 0;
             }
             .col-copy {
+                padding-top: 80px;
                 padding-right: 0;
             }
         }
@@ -156,10 +175,16 @@
 
         h1 {
             letter-spacing: -3.11px;
+            line-height: 0.85 !important;
+            margin-bottom: 0;
         }
 
         .sec_gallery {
-            font-size: 94px;
+            .section_title_wrap {
+                h1 {
+                    font-size: 94px;
+                }
+            }
         }
 
 
@@ -170,7 +195,16 @@
            h1{
                line-height: 1;
                 margin-bottom: 0;
+            }                
+
+            .sec_gallery {
+                .section_title_wrap {
+                    h1 {
+                        font-size: 45px;
+                    }
+                }
             }
+
         }
     }
 

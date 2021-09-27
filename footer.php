@@ -22,7 +22,7 @@
                             <p>Scottsdale, AZ 85266</p>                            
                         </div>
                         <div class="text_wrap">
-                            <a class="phonenum" href="tel:4803725079">(480) 372-5079</a>                  
+                            <a class="phonenum" href="tel:4804624869">(480) 462-4869</a>                  
                         </div>
                         <div class="text_wrap">
                             <a href="<?php echo home_url() ?>/cosmetic-dentists/dr-mark-peck/" class="meet_founder">Meet our Founder - <strong>Dr. Mark Peck</strong></a>         
@@ -42,6 +42,11 @@
                             ?> 
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="footmid">
+                <div class="text-wrap">
+                 <p class="text-center">To see our latest before and after photos, check out our Instagram: <a href="https://www.instagram.com/dentalstudio101/" target="_blank">@DentalStudio101</a></p>
                 </div>
             </div>
             <div class="footbot">

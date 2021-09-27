@@ -78,7 +78,6 @@ ul {
         }
 
         @include media (max-width, 1023px){
-            margin-bottom: 0;
         }
     }
 }
@@ -93,6 +92,7 @@ ul {
 
 .content {
     padding-top: 60px;
+    position: relative;
 
 
     h2,
@@ -123,6 +123,14 @@ ul {
         
             padding: 60px 0;
         }
+        h2,
+        h4 {
+            &.section_title {
+                width: 100%;
+            }
+        }
+        
+    
     }
 }
 
@@ -178,11 +186,11 @@ figure {
             }
 
             &:after {
-                right: -30px;
+                right: -10px;
             }
 
             &:before {
-                left: -30px;
+                left: -10px;
             }
         }
 
@@ -212,7 +220,6 @@ figure {
             margin-bottom: 35px;
 
             h1 {
-                
                 color: $color-white;
 
                 span {
@@ -241,7 +248,6 @@ figure {
                 text-align: center;
 
                 h1 {
-                    
                     margin-bottom: 10px;
                 }
             }
@@ -261,6 +267,7 @@ figure {
                 align-items: center!important;
                 
                 h1 {
+                    font-size: 45px!important;
                     color: $color-primary;
                     line-height: 1 !important;
                     span {
@@ -623,7 +630,7 @@ figure {
             font-weight: 400;
         }
         p {
-            font-weight: 300;
+            font-weight: 400;
             color: $body-color;
         }
         figure {
@@ -760,6 +767,18 @@ figure {
 
 #section_header_drboyle {
     background: #f4e4d4;
+    position: relative;
+
+    figure {
+        &.bg {
+            width: 53%;
+            z-index: 1;
+
+            img {
+                object-position: top;
+            }
+        }
+    }
    
     .cols2-s4 {
         .cell  {
@@ -774,63 +793,79 @@ figure {
             }
     
         }
+    } 
+    .section_title {
+        z-index: 1;
+        position: absolute;
+        top: 40%;
 
+        h1 {
+            color: $color-white;
+            line-height: 1.12 !important;
+            letter-spacing: -3.11px;
+
+            span {
+                display: block
+            }
+        }
+    }
+
+    .col-copy {
+
+        padding: 130px 0 80px;
+
+        p {
+            color: $color-grey;
+        }
         
+        h4 {
+            color: $color-secondary;
+        }
+    }
+
+    @include media (max-width, 1440px) {   
         .section_title {
-            z-index: 1;
-            position: absolute;
-            top: 40%;
-            right: 70px;
-            width: 100%;
+            left: 0;
 
             h1 {
-                color: $color-white;
-
-                span {
-                    display: block
-                }
+                font-size: 60px;
             }
         }
+    }
 
-        .col-copy {
-    
-            p {
-                color: $color-grey;
-            }
+    @include media (max-width, 1024px) {   
             
-            h4 {
-                color: $color-secondary;
-            }
+        .col-copy {
+            padding: 0;
         }
-    
-    
     }
 
     @include media (max-width, 1023px) {
-        .cols2-s4 {
+       
+        .col-image {
+            margin: 30px auto;
+            text-align: center;
 
-            .col-image {
-    
-                .section_title {
-                    right: auto;
-                    left: 30px;
-                }
 
-                .bg {
-                    position: unset;
-                    height: 450px;
+            .bg {
+                position: unset;
+                height: 450px;
 
-                    img {
-                        object-position: top;
-                    }
+                img {
+                    object-position: top;
                 }
             }
-    
-            
-            .col-copy {
-                padding: 0;
+        }
+        
+        .section_title {
+            position: unset;
+            h1 {
+                color: $color-primary;
+                span {
+                    
+                    display: inline;
+                }
             }
-
         }
     }
 }
