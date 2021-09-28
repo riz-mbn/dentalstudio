@@ -13,7 +13,7 @@ $custom_args = array(
 $custom_query = new WP_Query( $custom_args );
 						
 						?>
-<div id="blog">
+<section id="blog">
 	<div class="grid-container block1">
 		<div class="grid-x">
 			<div class='large-12 columns ttl'>
@@ -57,5 +57,5 @@ $custom_query = new WP_Query( $custom_args );
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <?php get_footer();?>
