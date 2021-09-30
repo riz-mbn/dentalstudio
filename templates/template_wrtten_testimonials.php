@@ -1,4 +1,4 @@
-<?php /*Template Name: Testimonials Written*/ get_header('inner'); ?>
+<?php /*Template Name: Testimonials Written*/ get_header(); ?>
 <section id="testi">
 	<div class="grid-container block1">
 		<div class=grid-x>

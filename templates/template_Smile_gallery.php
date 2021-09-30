@@ -1,4 +1,4 @@
-<?php /*Template Name: Smile Gallery*/ get_header('inner'); ?>
+<?php /*Template Name: Smile Gallery*/ get_header(); ?>
 <section id=smile_gallery>
 	<div class="grid-container block1">
 		<div class=grid-x>

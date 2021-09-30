@@ -1,4 +1,4 @@
-<?php /*Template Name: Gallery Veneers*/ get_header('inner'); ?>
+<?php /*Template Name: Gallery Veneers*/ get_header(); ?>
 <div id=custom_gallery>
 	<div class="grid-container block1">
 		<div class=grid-x>

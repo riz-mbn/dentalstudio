@@ -1,4 +1,4 @@
-<?php /*Template Name: Video Testimonials*/ get_header('inner'); ?>
+<?php /*Template Name: Video Testimonials*/ get_header(); ?>
 <section id="custom_gallery">
 	<div class="grid-container block1">
 		<div class=grid-x>

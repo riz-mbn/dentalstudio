@@ -31,3 +31,15 @@ function form_submit_button( $button, $form ) {
         return "<button class='button primary large' id='gform_submit_button_{$form['id']}'>{$form['button']['text']}</button>";
     endif;
 }
+
+
+
+function mbn_fa(){
+    ?>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <?php
+}
+
+add_action("wp_head","mbn_fa",1);

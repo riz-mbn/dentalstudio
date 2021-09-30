@@ -346,6 +346,20 @@ ul.gform_fields  {
     font-weight: 500;
     display: inline-block;
 }
+#gform_wrapper_7 {
+
+    .gform_submission_error {
+        font-size: 18px;
+        color: $color-white;
+    }
+    #gform_7 {
+        .validation_message {
+            color: $color-white;
+        }
+    }
+    
+
+}
 .hero-form {
     #gform_wrapper_6 {
 
@@ -381,6 +395,7 @@ ul.gform_fields  {
                     float: right !important;
                     position: absolute;
                     bottom: 40px;
+                    z-index: -1;
 
                     .btn-phone {
                         font-weight: 500;

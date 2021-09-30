@@ -1,4 +1,4 @@
-<?php /*Template Name: Studio Awards*/ get_header('inner'); ?>
+<?php /*Template Name: Studio Awards*/ get_header(); ?>
 <section id="studio">
 	<div class="grid-container block1">
 		<div class=grid-x>

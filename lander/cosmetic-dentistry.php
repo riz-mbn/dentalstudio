@@ -445,7 +445,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="sticky-btn" data-toggle="sticky-bar"><img src="<?php bloginfo('template_url'); ?>/lander/images/btn-schedule-appointment.png" alt=""></span>
                     <div class="sticky-form">
                         <?php //echo do_shortcode('[contact-form-7 id="4064" title="Schedule your Appointment (Cosmetic Dentistry)"]'); ?>                        
-                        <?php echo do_shortcode('[gravityform id="6" title="false" description="false" ajax="false"]'); ?>
+                        <?php echo do_shortcode('[gravityform id="8" title="false" description="false" ajax="false"]'); ?>
                         
                     </div>
                 </div>
@@ -473,7 +473,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="medium-6 large-5 cell">
                         <div class="footer-form" id="schedule-appointment">
                             <?php // echo do_shortcode('[contact-form-7 id="4064" title="Schedule your Appointment (Cosmetic Dentistry)"]'); ?>                     
-                            <?php echo do_shortcode('[gravityform id="6" title="false" description="false" ajax="false"]'); ?>
+                            <?php echo do_shortcode('[gravityform id="7" title="false" description="false" ajax="false"]'); ?>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-<?php /*Template Name: Doctors*/ get_header('inner'); ?>
+<?php /*Template Name: Doctors*/ get_header(); ?>
 <div id=doctors>
 	<div class="grid-container block1">
 		<div class=grid-x>

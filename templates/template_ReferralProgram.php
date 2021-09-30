@@ -1,4 +1,4 @@
-<?php /*Template Name: Referral Program*/ get_header('inner'); ?>
+<?php /*Template Name: Referral Program*/ get_header(); ?>
 <section id="referral_program">
 	<div class="grid-container block1">
 		<div class=grid-x>

@@ -333,6 +333,10 @@ textarea[rows="9"] {
 	bottom: -30px;
 	right: 0;
 }
+#gform_wrapper_7 .gform_submission_error,
+#gform_wrapper_7 .gfield_validation_message {
+    color: #fff;
+}
 
 .gform_wrapper .ginput_complex label, .gform_wrapper .ginput_complex legend {
 	display: block;
@@ -416,12 +420,13 @@ textarea[rows="9"] {
 .btn-play {
 	display: block;
 	position: relative;
-	font-family: "Font Awesome 5 Free";
+	font-family: "Font Awesome 5 Free" !important;
 	height: 100%;
 	color: #fff;
 }
 .btn-play:before {
 	content: "\f04b";
+	font-family: "Font Awesome 5 Free" !important;
 	color: #fff;
 	font-size: 30px;
 	background: #383e64; 

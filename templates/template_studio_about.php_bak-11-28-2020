@@ -1,4 +1,4 @@
-<?php /*Template Name: Studio About*/ get_header('inner'); ?>
+<?php /*Template Name: Studio About*/ get_header(); ?>
 <div id=studio_about>
 	<div class=block1>
 		<div class=row>

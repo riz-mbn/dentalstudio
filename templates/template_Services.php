@@ -1,4 +1,4 @@
-<?php /*Template Name: Services*/ get_header('inner'); ?>
+<?php /*Template Name: Services*/ get_header(); ?>
 <section id="services">
 	<div class="grid-container block1">
 		<div class="grid-x">

@@ -1,4 +1,4 @@
-<?php /*Template Name: Contact Us*/ get_header('inner'); ?>
+<?php /*Template Name: Contact Us*/ get_header(); ?>
 <section id="contact">
 	<div class="grid-container block1">
 		<div class="grid-x grid-margin-x">

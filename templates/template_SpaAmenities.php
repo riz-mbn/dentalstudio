@@ -1,4 +1,4 @@
-<?php /*Template Name: Spa Amenities*/ get_header('inner'); ?>
+<?php /*Template Name: Spa Amenities*/ get_header(); ?>
 <section id="spa">
 	<div class="grid-container block1">
 		<div class=grid-x>
