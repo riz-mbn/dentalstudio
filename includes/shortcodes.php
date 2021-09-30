@@ -176,35 +176,39 @@ add_shortcode('mbn_recent_posts', 'mbn_recent_posts');
 
 function before_after_photos($atts){
     
+
     $count = count(get_field('before_after_slider'));
     $style = '';
 
     if ( $count > 1 ){        
-        $returnhtml .= '<div class="before_after_wrap" style="gap: 0.5em; display: flex; flex-direction: row; justify-content: center; margin-bottom: 20px; flex-wrap: wrap;">';
-        
+        $returnhtml .= '<div class="before_after_wrap" style="gap: 1em; display: flex; flex-direction: row; justify-content: center; margin-bottom: 20px; flex-wrap: wrap;">';
+    
+        $style = 'width: 49%;';
     }
     else {
         $returnhtml .= '<div class="before_after_wrap">';
         $style = 'width: 50%;float: left;margin-right: 50px;';
     }
 
-if( have_rows('before_after_slider') ):
-    while( have_rows('before_after_slider') ) : the_row();
+    if( have_rows('before_after_slider') ):
+        while( have_rows('before_after_slider') ) : the_row();
 
-        $after = get_sub_field('before_photo');
-        $before = get_sub_field('after_photo');
+            $after = get_sub_field('after_photo');
+            $before = get_sub_field('before_photo');
 
-        $returnhtml .= '<div class="ba-item" style="'.$style .'">';
-        $returnhtml .= '<img alt="Image After" src="'. $after .'" />';
-        $returnhtml .= '<div class="resize">';
-        $returnhtml .= '<img alt="Image Before" src="'.$before .'" />';
-        $returnhtml .= '</div>';
-        $returnhtml .= '<span class="handle"></span>';
-        $returnhtml .= '</div>';
+            if( !empty($before) || !empty($after)) :
+                $returnhtml .= '<div class="ba-item" style="'.$style .'">';
+                $returnhtml .= '<img alt="Image After" src="'. $after .'" />';
+                $returnhtml .= '<div class="resize">';
+                $returnhtml .= '<img alt="Image Before" src="'.$before .'" />';
+                $returnhtml .= '</div>';
+                $returnhtml .= '<span class="handle"></span>';
+                $returnhtml .= '</div>';
+            endif;
 
-    endwhile;
-    
-endif;
+        endwhile;
+        
+    endif;
 
 $returnhtml .= '</div>';
 

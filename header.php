@@ -10,54 +10,54 @@
     <?php wp_head() ?>
     <?php if ( is_front_page() ): ?>
 		<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "Dentist",
-		  "name": "Dental Studio 101",
-		 "hasMap": "https://goo.gl/maps/2jWMfCvqdYiUGoTx5",
-		  "image": "https://www.dentalstudio101.com/wp-content/uploads/2020/06/ds101-dr1.png",
-		  "url": "https://www.dentalstudio101.com/",
-		  "telephone": "(480) 488-4852",
-		  "priceRange": "$$",
-		  "description": "Dental Studio 101 is voted as best Scottsdale cosmetic dentist. Our highly advanced dental spa with the most cutting-edge technology. Call Us Today!",
-		  "address": {
-			"@type": "PostalAddress",
-			"streetAddress": "33739 N Scottsdale Rd Suite 101",
-			"addressLocality": "Scottsdale",
-			"addressRegion": "AZ",
-			"postalCode": "85266",
-			"addressCountry": "US"
-		  },
-		  "geo": {
-			"@type": "GeoCoordinates",
-			"latitude": 33.7909975,
-			"longitude": -111.9252521
-		  },
-		  "openingHoursSpecification": [{
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": [
-			  "Monday",
-			  "Tuesday"
-			],
-			"opens": "07:00",
-			"closes": "17:00"
-		  },{
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": [
-			  "Wednesday",
-			  "Thursday"
-			],
-			"opens": "07:00",
-			"closes": "14:00"
-		  }],
-		  "sameAs": [
-			"https://www.facebook.com/DentalStudio101AZ/",
-			"https://www.rateabiz.com/reviews/dental-studio-101-scottsdale-az/6e8952381f45c1b2ddeb3b39555ebb4d/summary",
-			"https://twitter.com/DentalStudio101",
-			"https://www.youtube.com/user/DentalStudio101AZ/videos"
-		  ]
-		}
-		</script>
+			{
+			  "@context": "https://schema.org",
+			  "@type": "Dentist",
+			  "name": "Dental Studio 101",
+			 "hasMap": "https://goo.gl/maps/2jWMfCvqdYiUGoTx5",
+			  "image": "https://www.dentalstudio101.com/wp-content/uploads/2020/06/ds101-dr1.png",
+			  "url": "https://www.dentalstudio101.com/",
+			  "telephone": "(480) 488-4852",
+			  "priceRange": "$$",
+			  "description": "Dental Studio 101 is voted as best Scottsdale cosmetic dentist. Our highly advanced dental spa with the most cutting-edge technology. Call Us Today!",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "33739 N Scottsdale Rd Suite 101",
+				"addressLocality": "Scottsdale",
+				"addressRegion": "AZ",
+				"postalCode": "85266",
+				"addressCountry": "US"
+			  },
+			  "geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 33.7909975,
+				"longitude": -111.9252521
+			  },
+			  "openingHoursSpecification": [{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+				  "Monday",
+				  "Tuesday"
+				],
+				"opens": "07:00",
+				"closes": "17:00"
+			  },{
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+				  "Wednesday",
+				  "Thursday"
+				],
+				"opens": "07:00",
+				"closes": "14:00"
+			  }],
+			  "sameAs": [
+				"https://www.facebook.com/DentalStudio101AZ/",
+				"https://www.rateabiz.com/reviews/dental-studio-101-scottsdale-az/6e8952381f45c1b2ddeb3b39555ebb4d/summary",
+				"https://twitter.com/DentalStudio101",
+				"https://www.youtube.com/user/DentalStudio101AZ/videos"
+			  ]
+			}
+	</script>
 	<?php elseif ( is_page_template('templates/dr-boyle.php') ): ?>
 	    <script type="application/ld+json">
 		{
@@ -80,8 +80,8 @@
 		  }  
 		}
 		</script>
-	<?php elseif (is_page_template('templates/dr-koch.php')): ?>
-	    <script type="application/ld+json">
+    <?php elseif (is_page_template('templates/dr-mark.php')): ?>
+        <script type="application/ld+json">
 		{
 		  "@context": "https://schema.org/",
 		  "@type": "Person",
@@ -104,31 +104,31 @@
 		</script>
 	<?php elseif( is_blog_page() ): ?>
         <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.dentalstudio101.com/our-blog/"
-        },
-        "headline": "Dental Studio 101 Blog",
-        "description": "Read our recent Scottsdale dental blog posts and articles. Dental Studio 101 will keep you informed about the latest trends and topics in dentistry. Call us!",
-        "image": "https://www.dentalstudio101.com/wp-content/themes/ds101/img/logo.png",  
-        "author": {
-            "@type": "Organization",
-            "name": "Dr. Mark Peck"
-        },  
-        "publisher": {
-            "@type": "Organization",
-            "name": "",
-            "logo": {
-            "@type": "ImageObject",
-            "url": ""
-            }
-        },
-        "datePublished": ""
-        }
-        </script>
+		{
+		  "@context": "https://schema.org",
+		  "@type": "BlogPosting",
+		  "mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://www.dentalstudio101.com/our-blog/"
+		  },
+		  "headline": "Dental Studio 101 Blog",
+		  "description": "Read our recent Scottsdale dental blog posts and articles. Dental Studio 101 will keep you informed about the latest trends and topics in dentistry. Call us!",
+		  "image": "https://www.dentalstudio101.com/wp-content/themes/ds101/img/logo.png",  
+		  "author": {
+			"@type": "Organization",
+			"name": "Dr. Mark Peck"
+		  },  
+		  "publisher": {
+			"@type": "Organization",
+			"name": "",
+			"logo": {
+			  "@type": "ImageObject",
+			  "url": ""
+			}
+		  },
+		  "datePublished": ""
+		}
+		</script>
 	<?php endif; ?>
 
 </head>
@@ -159,10 +159,10 @@
                             ?> 
                         </nav>
                         <div class="navutil">
-                            <a href="tel:4804884852">
+                            <a href="tel:4804624869">
                                 <div class="icon_blurb">						
                                     <div class="icon_img icn_phone"></div>
-                                    <div class="icon_txt">(480) 488-4852</div>
+                                    <div class="icon_txt">(480) 462-4869</div>
                                 </div>
                                 <div class="subtext">"Dedication to Quality and Consistency.."</div>
                             </a>
@@ -207,10 +207,10 @@
                                 ?> 
                             </nav>
                             <div class="navutil">
-                                <a href="tel:4804884852">
+                                <a href="tel:4804624869">
                                     <div class="icon_blurb">				
                                         <div class="icon_img icn_phone black"></div>		
-                                        <div class="icon_txt">(480) 488-4852</div>
+                                        <div class="icon_txt">(480) 462-4869</div>
                                     </div>
                                     <div class="subtext">"Dedication to Quality and Consistency.."</div>
                                 </a>
