@@ -55,11 +55,12 @@ textarea {
 }
 
 select {
-    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDMyIDMyIj48cGF0aCBkPSJNMTYuMDAzIDE4LjYyNmw3LjA4MS03LjA4MUwyNSAxMy40NmwtOC45OTcgOC45OTgtOS4wMDMtOSAxLjkxNy0xLjkxNnoiLz48L3N2Zz4=') no-repeat center right 6px /20px 20px;
     padding-right:30px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-color: #fefefe;
+
 
     &::-ms-expand {
         display: none;
@@ -360,6 +361,113 @@ ul.gform_fields  {
     
 
 }
+
+#gform_wrapper_12 {
+
+    .ginput_complex {
+        display: block !important;
+
+        &:not(.ginput_container_address) span:not([style*="display:none"]):not(.ginput_full) {
+            padding-right: 0 !important; 
+        }
+
+        span:first-child input{            
+            margin-bottom: 20px;
+        }
+    }
+
+    #gform_12 {
+        position:relative;
+    
+        .gfield {
+    
+            float: left;
+            width: 49%;
+            margin-bottom: 20px;
+    
+            label,
+            legend {
+                display: block;
+                font-size:14px;
+            }
+            textarea.medium {
+                height: 200px !important;
+            }
+    
+            &.btn_cta_call {
+                width: 100%!important;
+                float: right !important;
+                position: absolute;
+                bottom: 40px;
+                z-index: -1;
+    
+                .btn-phone {
+                    font-weight: 500;
+                    font-size: 25px;
+                    color: #fff;
+                    float: right;
+                    margin: 8px 30px 0 0;
+                }
+            }
+    
+        }
+    
+        .service_field {        
+            float: right;
+            position: absolute;
+            right: 0;
+        }
+    
+        .message_field {
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 87px;
+
+            textarea {
+                height: 155px;
+            }
+        }
+    
+        .gform_footer {                      
+            float: right;
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+        }
+    
+        .ginput_complex {
+            label,
+            legend {
+                display: block;
+                font-size:14px;
+            }
+        }
+    
+        @include media (max-width, 1023px){
+    
+            .gfield {
+                float: none;
+                width: 100%;
+                margin-bottom: 0;
+    
+                
+                .ginput_complex {
+                    display: flex;
+                }        
+    
+            }
+            .message_field {
+                float: none;
+                position: unset;
+            }
+    
+    
+        }
+    
+    }
+    
+}
 .hero-form {
     #gform_wrapper_6 {
 
@@ -414,10 +522,8 @@ ul.gform_fields  {
                 right: 0;
             }
 
-            .gform_footer {
-                
+            .gform_footer {     
             }
-
             .ginput_complex {
                 label,
                 legend {

@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel=icon href='https://www.dentalstudio101.com/wp-content/themes/ds101/favicon.ico' />
+	<link rel=icon href='<?php echo MBN_ASSETS_URI ?>/img/favicon.ico' />
 	
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -27,9 +27,7 @@
 	<!-- End Google Tag Manager -->
 	
 	<?php wp_head(); ?>
-	<link rel=stylesheet href='<?php bloginfo('template_url'); ?>/css/foundation.min.css' />
-	<link rel=stylesheet href='<?php bloginfo('template_url'); ?>/css/jquery.mmenu.all.css' />
-	<link rel=stylesheet href='<?php bloginfo('template_url'); ?>/style.css' type='text/css' media='screen' />
+	<link rel=stylesheet href='<?php echo MBN_ASSETS_URI ?>/css/app.css' type='text/css' media='screen' />
 	
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
@@ -93,55 +91,58 @@
 		</div>
 		<?php if (!is_page(5699)): ?>
 			<header id="intro">
-				<div class="row flex-end">
-					<div class="columns medium-12 large-5">
-						<div class="logo-control">
-							<a href="/">
-								<img src="<?= get_template_directory_uri(); ?>/landing-assets/images/landing-logo.png" alt="">
-							</a>
-						</div>
-						<div class="text-center" style="max-width:530px;margin-left:auto;margin-right:auto">
-							<p><b>Dental Studio 101</b> is Arizona’s premier cosmetic dental facility, offering award-winning cosmetic and preventive dentistry for over 30 years.</p>
-							<p>To book an appointment or get a quote <br>for a service, fill out the form below. </p>
-						</div>
-						
+				<div class="grid-container">
+					<div class="grid-x grid-margin-x">
+						<div class="cell medium-12 large-5">
+							<div class="logo-control">
+								<a href="/">
+									<img src="<?= get_template_directory_uri(); ?>/landing-assets/images/landing-logo.png" alt="">
+								</a>
+							</div>
+							<div class="text-center" style="max-width:530px;margin-left:auto;margin-right:auto">
+								<p><b>Dental Studio 101</b> is Arizona’s premier cosmetic dental facility, offering award-winning cosmetic and preventive dentistry for over 30 years.</p>
+								<p>To book an appointment or get a quote <br>for a service, fill out the form below. </p>
+							</div>
+							
 
-						<div class="form-box">
-							<?= do_shortcode( '[contact-form-7 id="5696" title="Landing - Header: Contact Form"]' ); ?>
+							<div class="form-box">
+								<!-- <?php // do_shortcode( '[contact-form-7 id="5696" title="Landing - Header: Contact Form"]' ); ?> -->
+                            	<?php echo do_shortcode('[gravityform id="11" title="false" description="false" ajax="false"]'); ?>
+							</div>
 						</div>
-					</div>
-					<div class="columns medium-12 large-1 position-relative">
-						<div class="slider-holder">
-							<div class="slider-testimony">
-								<div class="slider-item">
-									<a href="https://www.youtube.com/watch?v=Hh_95QMNBMk" data-fancybox class="play-button"></a>
-									<a href="https://www.youtube.com/watch?v=Hh_95QMNBMk" data-fancybox class="video-thumb">
-										<img src="<?php echo get_template_directory_uri(); ?>/landing-assets/images/video-thumb-dr-alex.jpg" alt="">
-									</a>
-									<div class="video-content">
-										<span class="title">Why Dental Studio 101?</span>
-										<span class="content">Dental Studio 101 is committed to providing premier customer service. When you first arrive at our state-</span>
-										<span class="link">Read More</span>
+						<div class="cell medium-12 large-1 position-relative">
+							<div class="slider-holder">
+								<div class="slider-testimony">
+									<div class="slider-item">
+										<a href="https://www.youtube.com/watch?v=Hh_95QMNBMk" data-fancybox class="play-button"></a>
+										<a href="https://www.youtube.com/watch?v=Hh_95QMNBMk" data-fancybox class="video-thumb">
+											<img src="<?php echo get_template_directory_uri(); ?>/landing-assets/images/video-thumb-dr-alex.jpg" alt="">
+										</a>
+										<div class="video-content">
+											<span class="title">Why Dental Studio 101?</span>
+											<span class="content">Dental Studio 101 is committed to providing premier customer service. When you first arrive at our state-</span>
+											<span class="link">Read More</span>
+										</div>
 									</div>
-								</div>
-								<div class="slider-item">
-									<a href="https://www.youtube.com/watch?v=ZFlWwQC8zcE" data-fancybox class="play-button"></a>
-									<a href="https://www.youtube.com/watch?v=ZFlWwQC8zcE" data-fancybox class="video-thumb">
-										<img src="<?php echo get_template_directory_uri(); ?>/landing-assets/images/video-thumb-dr-alex.jpg" alt="">
-									</a>
-									<div class="video-content">
-										<span class="title">Why Dental Studio 101?</span>
-										<span class="content">Dental Studio 101 is committed to providing premier customer service. When you first arrive at our state-</span>
-										<span class="link">Read More</span>
+									<div class="slider-item">
+										<a href="https://www.youtube.com/watch?v=ZFlWwQC8zcE" data-fancybox class="play-button"></a>
+										<a href="https://www.youtube.com/watch?v=ZFlWwQC8zcE" data-fancybox class="video-thumb">
+											<img src="<?php echo get_template_directory_uri(); ?>/landing-assets/images/video-thumb-dr-alex.jpg" alt="">
+										</a>
+										<div class="video-content">
+											<span class="title">Why Dental Studio 101?</span>
+											<span class="content">Dental Studio 101 is committed to providing premier customer service. When you first arrive at our state-</span>
+											<span class="link">Read More</span>
+										</div>
 									</div>
 								</div>
 							</div>
+							
 						</div>
-						
-					</div>
-					<div class="columns large-6">
-						<div class="hero-featured">
-							<img src="<?= get_template_directory_uri(); ?>/landing-assets/images/landing-hero.png" alt="">
+						<div class="cell large-6">
+							<div class="hero-featured">
+								<img src="<?= get_template_directory_uri(); ?>/landing-assets/images/landing-hero.png" alt="">
+							</div>
 						</div>
 					</div>
 				</div>
