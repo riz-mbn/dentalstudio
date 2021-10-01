@@ -110,7 +110,14 @@
                             	<?php echo do_shortcode('[gravityform id="11" title="false" description="false" ajax="false"]'); ?>
 							</div>
 						</div>
-						<div class="cell medium-12 large-1 position-relative">
+						<!-- <div class="cell medium-12 large-1 position-relative">
+							
+							
+						</div> -->
+						<div class="cell medium-12 large-6 large-offset-1 position-relative align-self-bottom ">
+							<div class="hero-featured">
+								<img src="<?= get_template_directory_uri(); ?>/landing-assets/images/landing-hero.png" alt="">
+							</div>
 							<div class="slider-holder">
 								<div class="slider-testimony">
 									<div class="slider-item">
@@ -136,12 +143,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							
-						</div>
-						<div class="cell large-6">
-							<div class="hero-featured">
-								<img src="<?= get_template_directory_uri(); ?>/landing-assets/images/landing-hero.png" alt="">
 							</div>
 						</div>
 					</div>

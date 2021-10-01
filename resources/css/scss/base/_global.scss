@@ -95,7 +95,49 @@
     }
 }
 
-.landing-template ul li { list-style: none !important; }
+.landing-template {
+
+    h2.gform_submission_error{
+        color: $color-grey !important; 
+        font-size: 20px !important;
+    }
+    ul li { 
+        list-style: none !important; 
+    }
+    .landing-page {
+        header {
+            .slider-holder{
+                left: -70px;
+            }
+        }
+    }
+
+    @include media( max-width, 575px) {
+            
+        .landing-page {
+            header {
+                .slider-holder{
+                    margin: 0 auto 50px;
+                    max-width: 400px;
+                }
+            }
+        }
+
+    }
+
+    @include media( max-width, 480px) {
+            
+        .landing-page {
+            header {
+                .slider-holder{
+                    max-width: 295px;
+                }
+            }
+        }
+
+    }
+    
+}
 
 .reveal-overlay {
     position: fixed;
@@ -126,7 +168,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -10px;
-    margin-bottom: -10px;
+    margin-left: -10px;
 
     .gallery-item {        
         width: 25%;

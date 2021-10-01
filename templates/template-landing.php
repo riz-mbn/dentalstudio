@@ -266,7 +266,7 @@ get_header('landing');
 							<div class="cell medium-10">
 								<h2>Our Full-Range of Services</h2>
 
-								<ul class="cell-2">
+								<ul class="columns-2">
 									<li>Cosmetic Dentistry</li>
 									<li>Veneers</li>
 									<li>Dental Implants</li>
