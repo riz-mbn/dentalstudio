@@ -48,7 +48,7 @@
 					<div class="services_col">
 						<ul class="list">
 							<li><h4>Oral Surgery</h4></li>
-							<li><h4>Tmj</h4></li>
+							<li><h4>TMJ</h4></li>
 							<li><h4>& More!</h4></li>
 						</ul>
 					</div>

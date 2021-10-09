@@ -454,9 +454,10 @@ ul.gform_fields  {
                 }        
     
             }
-            .message_field {
+            .message_field,
+            .service_field {
                 float: none;
-                position: unset;
+                position: unset !important;
             }
     
     

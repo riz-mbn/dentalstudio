@@ -310,14 +310,6 @@
 		display: none;
 	}
 
-	.landing-page #intro,
-	.landing-page #state,
-	.landing-page .why-dental-studio,
-	.landing-page footer{
-		padding-left: 15px !important;
-		padding-right: 15px !important;
-	}
-
 	.landing-page #state .columns:nth-child(1){
 		order: 2;
 	}

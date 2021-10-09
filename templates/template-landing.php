@@ -11,14 +11,14 @@ get_header('landing');
 	<section id="state">
 		<div class="grid-container">
 			<div class="grid-x grid-margin-x">
-				<div class="cell large-6">
+				<div class="cell large-6 medium-order-2 small-order-2">
 					<div class="featured-image">
 						<?php if (has_post_thumbnail()): ?>
 							<?php the_post_thumbnail('full'); ?>
 						<?php endif ?>
 					</div>
 				</div>
-				<div class="cell large-6 pb-60">
+				<div class="cell large-6 pb-60 medium-order-1 small-order-1">
 					<?php the_content(); ?>
 				</div>
 			</div>
@@ -274,7 +274,7 @@ get_header('landing');
 									<li>Full Mouth Reconstruction</li>
 									<li>Invisalign</li>
 
-									<li>ERS</li>
+									<li>Esthetic Rehabilitation Scottsdale</li>
 									<li>Cosmetic Fillings</li>
 									<li>In-House Dental Lab</li>
 									<li>Root Canal</li>

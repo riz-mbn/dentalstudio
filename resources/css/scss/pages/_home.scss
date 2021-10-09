@@ -461,7 +461,15 @@
                     width: 100% !important;
                     .services-tabs {
                         border-right: 0 !important;
-                        padding-right: 14px;
+                        padding-right: 0;
+                        padding-left: 0 !important;
+
+                        .tabs-title {
+                            margin: 0 auto;
+                            a {
+                                justify-content: center;
+                            }
+                        }
                     }
                 }
 

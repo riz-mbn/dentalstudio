@@ -23,10 +23,10 @@
                 <div class="cell large-6">
                     <div class="col-image ba-wrap">			           		                    
                         <div class="ba-item">
-                            <img alt="Amalia After" src="<?php echo MBN_ASSETS_URI ?>/img/amalia-after-2.jpg">
+                            <img alt="Amalia After" src="<?php echo MBN_ASSETS_URI ?>/img/amalia-after-4.jpg">
 
                             <div class="resize">                            
-                                <img alt="Amalia Before" src="<?php echo MBN_ASSETS_URI ?>/img/amalia-before-2.jpg">
+                                <img alt="Amalia Before" src="<?php echo MBN_ASSETS_URI ?>/img/amalia-before-4.jpg">
                             </div>
                             <span class="handle"></span>
                         </div>
@@ -50,9 +50,9 @@
                 <div class="cell large-6 large-order-2">
                     <div class="col-image ba-wrap">			                    
                         <div class="ba-item">
-                            <img alt="Brandi After" src="<?php echo MBN_ASSETS_URI ?>/img/brandi-after-2.jpg">
+                            <img alt="Brandi After" src="<?php echo MBN_ASSETS_URI ?>/img/brandi-after-4.jpg">
                             <div class="resize">                            
-                                <img alt="Brandi Before" src="<?php echo MBN_ASSETS_URI ?>/img/brandi-before-2.jpg">
+                                <img alt="Brandi Before" src="<?php echo MBN_ASSETS_URI ?>/img/brandi-before-4.jpg">
                             </div>
                             <span class="handle"></span>
                         </div>
@@ -76,9 +76,9 @@
                 <div class="cell large-6">	
                     <div class="col-image ba-wrap">	
                         <div class="ba-item">
-                            <img alt="Glena After" src="<?php echo MBN_ASSETS_URI ?>/img/glena-after-2.jpg">
+                            <img alt="Glena After" src="<?php echo MBN_ASSETS_URI ?>/img/glena-after-4.jpg">
                             <div class="resize">                            
-                                <img alt="Glena Before" src="<?php echo MBN_ASSETS_URI ?>/img/glena-before-2.jpg">
+                                <img alt="Glena Before" src="<?php echo MBN_ASSETS_URI ?>/img/glena-before-4.jpg">
                             </div>
                             <span class="handle"></span>
                         </div>
@@ -102,9 +102,9 @@
                 <div class="cell large-6 large-order-2">
                     <div class="col-image ba-wrap">		
                         <div class="ba-item">
-                            <img alt="Jaco After" src="<?php echo MBN_ASSETS_URI ?>/img/jaco-after-2.jpg">
+                            <img alt="Jaco After" src="<?php echo MBN_ASSETS_URI ?>/img/jaco-after-4.jpg">
                             <div class="resize">                            
-                                <img alt="Jaco Before" src="<?php echo MBN_ASSETS_URI ?>/img/jaco-before-2.jpg">
+                                <img alt="Jaco Before" src="<?php echo MBN_ASSETS_URI ?>/img/jaco-before-4.jpg">
                             </div>
                             <span class="handle"></span>
                         </div>

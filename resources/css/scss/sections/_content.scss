@@ -36,11 +36,25 @@
     margin-left: 50px;
     padding-bottom: 20px;
     position: relative;
-    @include media(max-width,1023px){
-        float: none;
-        width: 100%;
-        margin-left: 0;
 
+    @include media(max-width,1023px){
+
+        &:not(.dental-crowns) {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    
+
+    @include media(max-width,649px){
+
+        &.dental-crowns {
+            float: none;
+            width: 100%;
+            margin-left: 0;
+        }
     }
 }
 
@@ -121,7 +135,7 @@ ul {
 
         section {
         
-            padding: 60px 0;
+            padding: 40px 0;
         }
         h2,
         h4 {
@@ -413,6 +427,21 @@ figure {
     }
 }
 
+#single {
+    h2 {
+        font-size: 45px;
+    }
+
+    @media (max-width: 1280px) {
+        h1 {
+            font-size: 45px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
 .services-tabs {
 
     &.slick-slider {
@@ -424,13 +453,18 @@ figure {
         .tabs-title {
             margin-right: 30px;
         }
+        
+        .slick-prev, 
+        .slick-next {
+            z-index: 1;
+        }
     
         .slick-prev {
             left: 0;
         }
 
         .slick-next {
-            display: none !important;
+            right: 0;
         }
     }
 }
@@ -468,7 +502,7 @@ figure {
                     }
 
                     .title {
-                        color: $color-dark !important;
+                        color: $body-color !important;
                     }
                 }
             }

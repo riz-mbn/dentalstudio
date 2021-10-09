@@ -307,16 +307,40 @@ header {
 							}
 						}
 					}
+					
 				}
 				@include media(max-width,1045px) {
 					
 					a {
-						padding: 0 5px !important
+						padding: 0 10px !important
+					}
+
+					.submenu {
+						li a {
+							padding: 15px !important
+						}
+					}
+
+					.is-dropdown-submenu-parent {
+						> a {
+
+							&:after {
+								right: 0 !important;
+							}
+						}
+
+						&.is-dropdown-submenu-item {
+							> a {
+								&:after {
+									right: 10px !important;
+								}
+							}
+						}
 					}
 
 				}
 
-				@include media(max-width,1440px) {
+				@include media(max-width,1480px) {
 					a {
 						padding: 0 10px;
 					}

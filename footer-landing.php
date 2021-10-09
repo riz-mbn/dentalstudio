@@ -45,7 +45,7 @@
 						<ul>
 							<li>© Dental Studio 101</li>
 							<li>All Rights Reserved.</li>
-							<li><a href="" target="_blank">Landing Page Design by</a>: My Biz Niche</li>
+							<li><a href="https://www.mybizniche.com/phoenix-web-design/" target="_blank">Landing Page Design by</a>: My Biz Niche</li>
 						</ul>
 					</div>
 				</div>

@@ -141,6 +141,27 @@
             }
         }
     }
+
+    
+    @include media(max-width, 1800px){
+        .cols2-s4 {
+            .large-order-2 {
+                
+                .col-image {
+                    .ba-item {
+                        width: 100% !important;
+                    }
+                } 
+            }
+            
+            
+            .col-image {
+                .ba-item {
+                    height: 100% !important;
+                }
+            } 
+        }
+    }
     
     @include media(max-width, 1023px){
                 

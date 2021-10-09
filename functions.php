@@ -102,8 +102,8 @@ function mbn_enqueue_scripts(){
 
     
     // App
-    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '2.0.1');
-    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], $wp_version, true);
+    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '2.2.9');
+    wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], '1.0.3');
 
     // localize objects
     wp_localize_script('app', 'main_obj', array(

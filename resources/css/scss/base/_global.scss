@@ -59,6 +59,10 @@
 .block3 {
     .grid-x {
         padding: 40px 0;
+
+        @include media(max-width,1024) {
+            padding: 20px 0;
+        }
     }
 }
 
@@ -93,6 +97,14 @@
         opacity: 0.5;
         cursor: pointer;
     }
+
+    &.star {
+        background-position: 0 0;
+        width: 139px;
+        height: 19px;
+        display: block;
+        margin: 0 auto 23px;
+    }
 }
 
 .landing-template {
@@ -108,6 +120,30 @@
         header {
             .slider-holder{
                 left: -70px;
+            }
+            .slider-item .content {
+                padding-top: 0;
+            }
+        }
+
+        .grid-container {
+            @include media (max-width, 1440px){
+                padding: 0 30px;
+            }
+
+        }
+
+        @include media (max-width, 1023px){
+            .testimonials  {
+
+                .slick-arrow {
+                    &.slick-prev {
+                        left: -30px  !important;
+                    }
+                    &.slick-next {
+                        right: -30px  !important;
+                    }
+                }
             }
         }
     }
@@ -187,6 +223,25 @@
     @include media (max-width, 480px){
         .gallery-item {        
             width: auto;
+        }
+    }
+}
+
+#services {
+    .block1{
+        .ttl {
+            h1 {
+                font-family: 'Poppins';
+            }
+        }
+
+        @include media (max-width, 1024px) {
+                
+            .ttl {
+                h1 {
+                    font-size: 45px;
+                }
+            }
         }
     }
 }
@@ -588,7 +643,6 @@
 
 .col-image {
     &.ba-wrap {        
-        background: #000;
         padding-left: 240px;
 
         @include media(max-width, 1720px){
@@ -636,7 +690,9 @@
             background: url("../img/img-slider.png"), linear-gradient(to bottom, #e5cfb4, #d1a979);
         }
     }
-
+    @include media (max-width, 1024px){
+        margin-bottom: 20px;
+    }
     @include media (max-width, 1023px){
         width: 100% !important;
     }

@@ -17,7 +17,7 @@
 			 "hasMap": "https://goo.gl/maps/2jWMfCvqdYiUGoTx5",
 			  "image": "https://www.dentalstudio101.com/wp-content/uploads/2020/06/ds101-dr1.png",
 			  "url": "https://www.dentalstudio101.com/",
-			  "telephone": "(480) 488-4852",
+			  "telephone": "(480) 372-5079",
 			  "priceRange": "$$",
 			  "description": "Dental Studio 101 is voted as best Scottsdale cosmetic dentist. Our highly advanced dental spa with the most cutting-edge technology. Call Us Today!",
 			  "address": {
@@ -159,10 +159,10 @@
                             ?> 
                         </nav>
                         <div class="navutil">
-                            <a href="tel:4804624869">
+                            <a href="tel:4803725079">
                                 <div class="icon_blurb">						
                                     <div class="icon_img icn_phone"></div>
-                                    <div class="icon_txt">(480) 462-4869</div>
+                                    <div class="icon_txt">(480) 372-5079</div>
                                 </div>
                                 <div class="subtext">"Dedication to Quality and Consistency.."</div>
                             </a>
@@ -207,10 +207,10 @@
                                 ?> 
                             </nav>
                             <div class="navutil">
-                                <a href="tel:4804624869">
+                                <a href="tel:4803725079">
                                     <div class="icon_blurb">				
                                         <div class="icon_img icn_phone black"></div>		
-                                        <div class="icon_txt">(480) 462-4869</div>
+                                        <div class="icon_txt">(480) 372-5079</div>
                                     </div>
                                     <div class="subtext">"Dedication to Quality and Consistency.."</div>
                                 </a>
