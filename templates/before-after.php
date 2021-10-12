@@ -122,6 +122,15 @@
             </div>        
         </div>
     </section>
+    <section class="section_socials text-center">
+        <div class="grid-container">
+            <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/bgs/img-socials-bg.png" alt="" width="1170" height="142" /></figure>
+            <div class="text-wrap">
+                <figure class="icon-ig"><img src="<?php echo MBN_ASSETS_URI ?>/img/icon/icn-ig.svg" alt="" width="52" height="52" /></figure>
+                <h4>For the latest transformations, follow us on Instagram <a href="https://www.instagram.com/dentalstudio101/" target="_blank">@dentalstudio101</a> </h4>
+            </div>
+        </div>
+    </section>
     <section class="section_cta with_separator text-center">
         <div class="grid-container">
             <a href="<?php echo home_url() ?>/contact-us" class="button primary large">Schedule an Appointment</a>

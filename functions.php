@@ -102,7 +102,7 @@ function mbn_enqueue_scripts(){
 
     
     // App
-    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '2.2.9');
+    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '2.3.0');
     wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], '1.0.3');
 
     // localize objects

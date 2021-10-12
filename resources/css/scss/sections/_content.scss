@@ -166,8 +166,63 @@ figure {
     }    
 }
 
+.section_socials {
+    position: relative;
+    margin: 60px 0;
+    padding: 30px 0;
+
+    .text-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-ig {
+        margin: 0 32px 0 0;
+        padding: 15.8px 15.8px;
+        border-radius: 24px;
+        background-image: linear-gradient(to bottom, #4d5fd5, #a0068a 23%, #fb612b 74%, #ffec81);
+    }
+
+    .bg {
+        border: solid 1px #cfb188;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h4 {
+        margin-bottom: 0;
+        color: $color-secondary;
+
+        a {
+            color: #c48d49;
+            border-bottom: 1px solid #cdad80;
+        }
+    }
+
+    @include media (max-width, 1023px){
+            
+        .icon-ig {
+            margin: 0 0 20px;
+            padding: 10px;
+        }
+
+        .text-wrap {
+            flex-direction: column; 
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    
+    }
+
+}
+
 .section_cta {
 
+    margin: 60px 0;
+    padding: 30px 0;
+    
     .grid-container {
         position:relative;
     }
@@ -207,8 +262,13 @@ figure {
                 left: -10px;
             }
         }
+    }
 
-        @include media (max-width, 1024px){
+    @include media (max-width, 1024px){
+
+        padding: 40px 0;
+
+        &.with_separator {
                 
             .grid-container {
                 position:relative;
