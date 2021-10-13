@@ -1,6 +1,4 @@
 <?php
-
-
 // Register Testimonials Post Type
 function testimonials_post() {
     register_post_type( 'testimonials_type',

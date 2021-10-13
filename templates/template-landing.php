@@ -2,11 +2,8 @@
 /**
  * Template Name: Dev Landing Page
  */
-
 get_header('landing');
 ?>
-
-
 <main>
 	<section id="state">
 		<div class="grid-container">

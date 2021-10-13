@@ -1,7 +1,6 @@
 <?php 
 /*Template Name: Cosmetic Landing Page*/
-?>
-<!doctype html>
+?><!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 
 <head>

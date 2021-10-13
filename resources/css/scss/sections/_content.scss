@@ -264,6 +264,22 @@ figure {
         }
     }
 
+    @include media (max-width, 144011px) {
+
+        &.with_separator {
+                
+            .grid-container {
+                
+                &:after {
+                    right: 10px;
+                }
+                &:before {
+                    left: 10px;
+                }
+            }
+        }
+    }
+
     @include media (max-width, 1024px){
 
         padding: 40px 0;

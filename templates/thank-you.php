@@ -1,8 +1,6 @@
 <?php
     /* Template Name: Thank You template */
-
 get_header() ?>
-
 <section id="sec-tbankyou" class="section text-center">
     <div class="grid-container">
         <div class="text-block">

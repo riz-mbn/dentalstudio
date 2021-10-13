@@ -1,10 +1,8 @@
 <?php
-
 define('MBN_DIR_URI', get_template_directory_uri());
 define('MBN_DIR_PATH', get_template_directory());
 define('MBN_ASSETS_URI', MBN_DIR_URI.'/resources');
 define('MBN_MAP_API_KEY',"AIzaSyDGw796lT6PGFF97mZxv5LnemjwcDaJMJQ");
-
 /**
  * Theme setup
 **/
@@ -37,8 +35,7 @@ function mbn_theme_setup(){
     // ));
 
     // add_theme_support('customize-selective-refresh-widgets');
-    // add_theme_support('wp-block-styles');
-    
+    // add_theme_support('wp-block-styles');    
 
     register_nav_menus(array(
         'main-menu'   => 'Main Menu',
@@ -47,7 +44,6 @@ function mbn_theme_setup(){
 
 }
 add_action('after_setup_theme', 'mbn_theme_setup');
-
 
 /**
  * Enqeueue stylesheets and scripts
@@ -79,7 +75,6 @@ function mbn_enqueue_scripts(){
     wp_register_script( 'jquery-migrate', MBN_ASSETS_URI.'/vendor/jquery-migrate-3.min.js', [], $wp_version);
     wp_enqueue_script( 'jquery-migrate' );
     
-
     // Foundation JS
     wp_enqueue_script('foundation', MBN_ASSETS_URI.'/vendor/foundation/js/foundation.min.js', [], $wp_version);
 
@@ -102,7 +97,7 @@ function mbn_enqueue_scripts(){
 
     
     // App
-    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '2.3.0');
+    wp_enqueue_style('app', MBN_ASSETS_URI.'/css/app.css', [], '2.3.1');
     wp_enqueue_script('app', MBN_ASSETS_URI.'/js/app.js', [], '1.0.3');
 
     // localize objects
@@ -141,7 +136,6 @@ function mbn_register_sidebars(){
 }
 //add_action('widgets_init', 'mbn_register_sidebars');
 
-
 /**
  * Allow SVG
 **/
@@ -151,13 +145,11 @@ function mbn_myme_types($mime_types){
 }
 add_filter('upload_mimes', 'mbn_myme_types');
 
-
 require MBN_DIR_PATH."/mbn-login/setup.php";
 require MBN_DIR_PATH.'/includes/post-types.php';
 require MBN_DIR_PATH.'/includes/shortcodes.php';
 require MBN_DIR_PATH.'/includes/public-hooks.php';
 require MBN_DIR_PATH.'/includes/admin-hooks.php';
-
 
 /** Get page type, eg. for customizer option */
 function mbn_page_type() {
@@ -257,7 +249,6 @@ function custom_pagination($numpages, $pagerange, $paged) {
     }
 }
 
-
 add_filter( 'category_rewrite_rules', 'vipx_filter_category_rewrite_rules' );
 function vipx_filter_category_rewrite_rules( $rules ) {
     $categories = get_categories( array( 'hide_empty' => false ) );
@@ -285,12 +276,9 @@ function vipx_filter_category_rewrite_rules( $rules ) {
         }
     }
     return $rules;
-}
-?>
+} 
 
-<?php 
-function js_mapscript(){
-    
+function js_mapscript(){    
 /*
 <script>
     var map;
@@ -343,4 +331,5 @@ add_action( 'init', 'register_new_menu' );
 if (is_page(5690)) {
 add_filter('wpcf7_autop_or_not', '__return_false');
 }
+
 

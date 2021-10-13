@@ -1,4 +1,5 @@
-<?php /*Template Name: Blog*/ get_header(); 
+<?php 
+/*Template Name: Blog*/ get_header(); 
 					
 $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 $custom_args = array(

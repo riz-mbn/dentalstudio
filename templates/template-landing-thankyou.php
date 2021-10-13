@@ -2,7 +2,6 @@
 /**
  * Template Name: Dev Landing - Thank You Page
  */
-
 get_header('landing');
 ?>
 <main>

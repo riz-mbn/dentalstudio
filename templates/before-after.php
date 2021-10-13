@@ -139,7 +139,7 @@
 
     <section class="sec_gallery">
         <div class="grid-container">
-            <div class="grid-x grid-margin-x">
+            <div class="grid-x">
                 <div class="cell large-12 col-copy">
                     <div class="section_title_wrap">
                         <h1>Smile <span>Board</span></h1>

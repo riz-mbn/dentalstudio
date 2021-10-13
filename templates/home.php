@@ -160,7 +160,7 @@
                 <div class="cell large-12 col-copy">
                     <div class="section_title_wrap">
                         <h1>Smile <span>Gallery</span></h1>
-                        <a href="<?php echo home_url()?>/before-after" class="button small"><span>View More</span></a>
+                        <a href="<?php echo home_url()?>/cosmetic-dental-gallery/" class="button small"><span>View More</span></a>
                     </div>
                     <figure class="bg"><img src="<?php echo MBN_ASSETS_URI ?>/img/img_smile_grp_2.jpg" alt="" width="1410" height="728" /></figure>
                 </div>

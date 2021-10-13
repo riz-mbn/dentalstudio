@@ -1,4 +1,5 @@
-<?php get_header() ?>
+<?php 
+get_header() ?>
 
 <div id="single">
 	<div class="block2">
