@@ -67,5 +67,13 @@
 <script>
 gtag('event', 'conversion', {'send_to': 'AW-817881512/d9U1CL7FlocBEKjD_4UD'});
 </script>
+
+<?php if ( is_page_template('templates/template-landing-thankyou.php') ): ?>
+<!-- Event snippet for Form Fill conversion page -->
+<script>
+gtag('event', 'conversion', {'send_to': 'AW-817881512/d9U1CL7FlocBEKjD_4UD'});
+</script>
+<?php endif; ?>
+
 </body>
 </html>
